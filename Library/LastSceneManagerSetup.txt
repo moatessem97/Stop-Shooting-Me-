@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/TP.unity
+- path: Assets/SandboxPrototype.unity
   isLoaded: 1
   isActive: 1
