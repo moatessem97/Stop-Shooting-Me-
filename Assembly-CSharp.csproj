@@ -111,6 +111,7 @@
      <Compile Include="Assets\Scripts\AICharacterControl.cs" />
      <Compile Include="Assets\Scripts\ButtonController.cs" />
      <Compile Include="Assets\Scripts\ButtonController_Paused.cs" />
+     <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\CanvasController.cs" />
      <Compile Include="Assets\Scripts\CanvasController_Paused.cs" />
      <Compile Include="Assets\Scripts\MenuController.cs" />
