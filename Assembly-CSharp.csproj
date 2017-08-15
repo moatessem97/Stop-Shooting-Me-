@@ -46,6 +46,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Buttons and Doors\AutoDoorScript1.cs" />
+     <Compile Include="Assets\Buttons and Doors\ButtonMovement.cs" />
+     <Compile Include="Assets\Buttons and Doors\ButtonTriggerScript.cs" />
+     <Compile Include="Assets\Buttons and Doors\Doors1.cs" />
+     <Compile Include="Assets\Buttons and Doors\GunCollectibleRotation1.cs" />
+     <Compile Include="Assets\Buttons and Doors\MK2Door.cs" />
+     <Compile Include="Assets\Buttons and Doors\PickUp1.cs" />
+     <Compile Include="Assets\Buttons and Doors\Pickupable.cs" />
      <Compile Include="Assets\Extra Assets\Controller Tester\Scripts\DetectUnknownControllerMappings.cs" />
      <Compile Include="Assets\Extra Assets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
      <Compile Include="Assets\Extra Assets\EffectExamples\Shared\Scripts\GunAim.cs" />
