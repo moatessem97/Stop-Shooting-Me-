@@ -31,7 +31,7 @@ public class MK2Door : MonoBehaviour
 
 	void OnTriggerEnter(Collider col)
 	{
-		if (col.gameObject.tag == "Player" || col.gameObject.tag == "Resizable")
+		if (col.gameObject.tag == "Player" || col.gameObject.tag == "Pickup")
 			
 
 			if (triggerEnter != null) 
@@ -49,7 +49,7 @@ public class MK2Door : MonoBehaviour
 
 	void OnTriggerExit(Collider col)
 	{
-		if (col.gameObject.tag == "Player" || col.gameObject.tag == "Resizable")
+		if (col.gameObject.tag == "Player" || col.gameObject.tag == "Pickup")
 
 
 		

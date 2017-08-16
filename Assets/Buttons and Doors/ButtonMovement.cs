@@ -28,7 +28,7 @@ public class ButtonMovement : MonoBehaviour {
 
 	void OnTriggerEnter(Collider col)
 	{
-		if (col.gameObject.tag == "Player" || col.gameObject.tag == "Resizable")
+		if (col.gameObject.tag == "Player" || col.gameObject.tag == "Pickup")
 			
 
 		if (triggerEnter != null) 
@@ -41,7 +41,7 @@ public class ButtonMovement : MonoBehaviour {
 
 	void OnTriggerExit(Collider col)
 	{
-		if(col.gameObject.tag == "Player" || col.gameObject.tag == "Resizable")
+		if(col.gameObject.tag == "Player" || col.gameObject.tag == "Pickup")
 
 
 		if (triggerExit != null) 
