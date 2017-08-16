@@ -36,7 +36,7 @@ public class PickUpSc : MonoBehaviour {
         {
             return;
         }
-        if(other.tag == "Pickup")
+        if(other.tag == "Pickup" || other.gameObject.name == "PlayerA")
         {
             if(Input.GetButtonDown("Fire2"))
             {
