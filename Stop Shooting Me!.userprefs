@@ -7,7 +7,7 @@
       <File FileName="Assets\Scripts\CameraFollow.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\ButtonController.cs" Line="1" Column="1" />
       <File FileName="Assets\Buttons and Doors\PickUp1.cs" Line="1" Column="1" />
-      <File FileName="Assets\Buttons and Doors\ButtonMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\NextLev.cs" Line="10" Column="35" />
       <File FileName="Assets\Scripts\AICharacterControl.cs" Line="31" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>

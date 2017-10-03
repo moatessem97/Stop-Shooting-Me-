@@ -120,6 +120,7 @@
      <Compile Include="Assets\Scripts\CanvasController_Paused.cs" />
      <Compile Include="Assets\Scripts\MenuController.cs" />
      <Compile Include="Assets\Scripts\MenuController_Paused.cs" />
+     <Compile Include="Assets\Scripts\NextLev.cs" />
      <Compile Include="Assets\Scripts\PickUpSc.cs" />
      <Compile Include="Assets\Scripts\PickupItem1.cs" />
      <Compile Include="Assets\Scripts\RocketObject.cs" />
