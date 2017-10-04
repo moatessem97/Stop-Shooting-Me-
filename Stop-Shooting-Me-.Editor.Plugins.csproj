@@ -136,6 +136,18 @@
     <Reference Include="UnityEditor.iOS.Extensions.Common">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
+    <Reference Include="RAINMetaformEditor">
+      <HintPath>Assets\RAIN\Editor\RAINMetaformEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="RAINMetaform">
+      <HintPath>Assets\RAIN\RAINMetaform.dll</HintPath>
+    </Reference>
+    <Reference Include="RAIN">
+      <HintPath>Assets\RAIN\RAIN.dll</HintPath>
+    </Reference>
+    <Reference Include="RAINEditor">
+      <HintPath>Assets\RAIN\Editor\RAINEditor.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Stop-Shooting-Me-.csproj">
@@ -151,6 +163,7 @@
     <Compile Include="Assets\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\AI\BehaviorTrees\StoopedRobot.txt" />
     <None Include="Assets\Extra Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
     <None Include="Assets\Extra Assets\Gem\Shaders\Gem.shader" />
     <None Include="Assets\Extra Assets\Pause Menu Assets\Fonts\exo\SIL Open Font License.txt" />
@@ -195,6 +208,8 @@
     <None Include="Assets\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
     <None Include="Assets\PostProcessing\Resources\Shaders\Uber.shader" />
     <None Include="Assets\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
+    <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
+    <None Include="Assets\RAIN\Editor\Shaders\RAINShader.shader" />
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />

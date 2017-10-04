@@ -1,0 +1,3 @@
+<behaviortree name="StoopedRobot">
+  <sequencer name="root"></sequencer>
+</behaviortree>
