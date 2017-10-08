@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{ADE214AA-E5C8-006B-ABB9-33A36E328A71}</ProjectGuid>
+    <ProjectGuid>{60E457CF-B3B6-DC48-A96C-045E8AC95CDF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -138,12 +138,14 @@
      <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
      <None Include="Assets\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
      <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
+     <None Include="Assets\RAIN\Editor\Shaders\RAINShader.shader" />
      <None Include="Assets\PostProcessing\Resources\Shaders\ACES.cginc" />
      <None Include="Assets\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
      <None Include="Assets\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
      <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
      <None Include="Assets\PostProcessing\Resources\Shaders\Uber.shader" />
      <None Include="Assets\PostProcessing\Resources\Shaders\Blit.shader" />
+     <None Include="Assets\AI\BehaviorTrees\StoopedRobot.txt" />
      <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
      <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
      <None Include="Assets\PostProcessing\Resources\Shaders\FXAA3.cginc" />
@@ -151,6 +153,7 @@
      <None Include="Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
      <None Include="Assets\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
      <None Include="Assets\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
+     <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
      <None Include="Assets\PostProcessing\Resources\Shaders\Common.cginc" />
      <None Include="Assets\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
      <None Include="Assets\PostProcessing\Editor Resources\UI\Trackball.shader" />
@@ -197,25 +200,16 @@
  <Reference Include="UnityEngine.VR">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
- <Reference Include="ProBuilderCore-Unity5">
- <HintPath>C:/Users/Asus/Documents/Studio3/Stop Shooting Me!/Assets/ProCore/ProBuilder/Classes/ProBuilderCore-Unity5.dll</HintPath>
+ <Reference Include="RAIN">
+ <HintPath>C:/Users/Asus/Documents/GitHub/Stop-Shooting-Me-/Assets/RAIN/RAIN.dll</HintPath>
  </Reference>
- <Reference Include="ProBuilderMeshOps-Unity5">
- <HintPath>C:/Users/Asus/Documents/Studio3/Stop Shooting Me!/Assets/ProCore/ProBuilder/Classes/ProBuilderMeshOps-Unity5.dll</HintPath>
- </Reference>
- <Reference Include="KdTreeLib">
- <HintPath>C:/Users/Asus/Documents/Studio3/Stop Shooting Me!/Assets/ProCore/ProBuilder/Classes/ClassesLib/KdTreeLib.dll</HintPath>
- </Reference>
- <Reference Include="pb_Stl">
- <HintPath>C:/Users/Asus/Documents/Studio3/Stop Shooting Me!/Assets/ProCore/ProBuilder/Classes/ClassesLib/pb_Stl.dll</HintPath>
- </Reference>
- <Reference Include="Poly2Tri">
- <HintPath>C:/Users/Asus/Documents/Studio3/Stop Shooting Me!/Assets/ProCore/ProBuilder/Classes/ClassesLib/Poly2Tri.dll</HintPath>
+ <Reference Include="RAINMetaform">
+ <HintPath>C:/Users/Asus/Documents/GitHub/Stop-Shooting-Me-/Assets/RAIN/RAINMetaform.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{A5DA196B-0282-6A2E-8ED2-524126C27CE6}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{EA5B3129-C1A7-D2A4-8A14-825D98F32F76}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
