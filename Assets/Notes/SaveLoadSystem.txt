@@ -1,0 +1,10 @@
+Implementing the Save  and Load System
+
+With Json requires an identifier of the objects being saved, what data is being saved from the objects and a destination for the data to be saved to.
+With loading it needs to access the data store and then overwrite the appropriate objects on load.
+
+Proposed Implementation:
+Glowing Orb Object (as proposed by Rick) - has a saved Object script that identifies it as a saveable item
+Alternatively saves an obtained trigger on the player objects
+End of level triggers the save script - Script gets accessed just before players load out of level, accesses either player or orb, overwrites obtained state for that orb (player would probably be better as a persistant object in all scenes)
+On loading in hub, check player script to identify progress, On scene load check if game was in progress, if not activate load script to overwrite default players scripts, if was, ignore script call and unlock apporpriate hub doors. 
