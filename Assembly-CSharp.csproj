@@ -62,8 +62,10 @@
      <Compile Include="Assets\Buttons and Doors\Pickupable.cs" />
      <Compile Include="Assets\Extra Assets\Controller Tester\Scripts\DetectUnknownControllerMappings.cs" />
      <Compile Include="Assets\Extra Assets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
+     <Compile Include="Assets\Extra Assets\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
      <Compile Include="Assets\Extra Assets\EffectExamples\Shared\Scripts\GunAim.cs" />
      <Compile Include="Assets\Extra Assets\EffectExamples\Shared\Scripts\GunShoot.cs" />
+     <Compile Include="Assets\Extra Assets\EffectExamples\Shared\Scripts\ParticleCollision.cs" />
      <Compile Include="Assets\Extra Assets\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
      <Compile Include="Assets\Extra Assets\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
      <Compile Include="Assets\Extra Assets\GemExample\Scripts\DemoTimeOfDay.cs" />

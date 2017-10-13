@@ -915,6 +915,15 @@ MonoBehaviour:
       type: 2}
     particlePosition: {x: -1.5, y: 2.5, z: -5}
     particleRotation: {x: -20, y: 0, z: 0}
+  - title: 'Hit Effect: Extinguish'
+    description: "This is using Particles collisions script callback to simulate a
+      water stream extinguishing a burning object.\r\nShoot the ball to create a water
+      stream. If it touches the burning plank it will extinguish it."
+    isWeaponEffect: 1
+    particleSystemGO: {fileID: 1462754386875696, guid: ec68cf3d27ad1bf48a4b4d3af84e4ded,
+      type: 2}
+    particlePosition: {x: -1.5, y: 2.5, z: -5}
+    particleRotation: {x: -20, y: 0, z: 0}
   - title: 'Hit Effect: Flesh'
     description: Blood effect simulating a bullet hitting flesh, based on movie squibs.
       It uses multiple particle systems. One effect has trails with a globular texture
@@ -1596,6 +1605,8 @@ MonoBehaviour:
   stoneHitEffect: {fileID: 1000010844420130, guid: 4edabb1c0dde62743b137378c7d22980,
     type: 2}
   waterLeakEffect: {fileID: 1000011439201316, guid: a60a75fdadab5de428529a5b8ef0426a,
+    type: 2}
+  waterLeakExtinguishEffect: {fileID: 1277954026192068, guid: 8c0568c457f38824d8649f26f2363927,
     type: 2}
   fleshHitEffects:
   - {fileID: 1000013169864706, guid: e5a3d6da48298a0458c1990f58c27069, type: 2}
