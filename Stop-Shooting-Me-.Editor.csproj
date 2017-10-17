@@ -136,17 +136,17 @@
     <Reference Include="UnityEditor.iOS.Extensions.Common">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
-    <Reference Include="RAINMetaformEditor">
-      <HintPath>Assets\RAIN\Editor\RAINMetaformEditor.dll</HintPath>
+    <Reference Include="RAIN">
+      <HintPath>Assets\RAIN\RAIN.dll</HintPath>
     </Reference>
     <Reference Include="RAINMetaform">
       <HintPath>Assets\RAIN\RAINMetaform.dll</HintPath>
     </Reference>
-    <Reference Include="RAIN">
-      <HintPath>Assets\RAIN\RAIN.dll</HintPath>
-    </Reference>
     <Reference Include="RAINEditor">
       <HintPath>Assets\RAIN\Editor\RAINEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="RAINMetaformEditor">
+      <HintPath>Assets\RAIN\Editor\RAINMetaformEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -208,6 +208,7 @@
     <None Include="Assets\Extra Assets\Gem\Shaders\Gem.shader" />
     <None Include="Assets\Extra Assets\Pause Menu Assets\Fonts\exo\SIL Open Font License.txt" />
     <None Include="Assets\Extra Assets\Pause Menu Assets\Fonts\open-sans\Apache License.txt" />
+    <None Include="Assets\Notes\SaveLoadSystem.txt" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />

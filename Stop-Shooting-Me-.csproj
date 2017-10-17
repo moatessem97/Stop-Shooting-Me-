@@ -82,11 +82,11 @@
     <Reference Include="UnityEditor.iOS.Extensions.Common">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
-    <Reference Include="RAINMetaform">
-      <HintPath>Assets\RAIN\RAINMetaform.dll</HintPath>
-    </Reference>
     <Reference Include="RAIN">
       <HintPath>Assets\RAIN\RAIN.dll</HintPath>
+    </Reference>
+    <Reference Include="RAINMetaform">
+      <HintPath>Assets\RAIN\RAINMetaform.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -107,8 +107,10 @@
     <Compile Include="Assets\Buttons and Doors\Pickupable.cs" />
     <Compile Include="Assets\Extra Assets\Controller Tester\Scripts\DetectUnknownControllerMappings.cs" />
     <Compile Include="Assets\Extra Assets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
+    <Compile Include="Assets\Extra Assets\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
     <Compile Include="Assets\Extra Assets\EffectExamples\Shared\Scripts\GunAim.cs" />
     <Compile Include="Assets\Extra Assets\EffectExamples\Shared\Scripts\GunShoot.cs" />
+    <Compile Include="Assets\Extra Assets\EffectExamples\Shared\Scripts\ParticleCollision.cs" />
     <Compile Include="Assets\Extra Assets\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
     <Compile Include="Assets\Extra Assets\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
     <Compile Include="Assets\Extra Assets\GemExample\Scripts\DemoTimeOfDay.cs" />
@@ -162,12 +164,12 @@
     <Compile Include="Assets\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
-    <Compile Include="Assets\Scripts\AICharacterControl.cs" />
     <Compile Include="Assets\Scripts\ButtonController.cs" />
     <Compile Include="Assets\Scripts\ButtonController_Paused.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\CanvasController.cs" />
     <Compile Include="Assets\Scripts\CanvasController_Paused.cs" />
+    <Compile Include="Assets\Scripts\CharacterAbilities.cs" />
     <Compile Include="Assets\Scripts\MenuController.cs" />
     <Compile Include="Assets\Scripts\MenuController_Paused.cs" />
     <Compile Include="Assets\Scripts\NextLev.cs" />
@@ -185,6 +187,7 @@
     <None Include="Assets\Extra Assets\Gem\Shaders\Gem.shader" />
     <None Include="Assets\Extra Assets\Pause Menu Assets\Fonts\exo\SIL Open Font License.txt" />
     <None Include="Assets\Extra Assets\Pause Menu Assets\Fonts\open-sans\Apache License.txt" />
+    <None Include="Assets\Notes\SaveLoadSystem.txt" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
