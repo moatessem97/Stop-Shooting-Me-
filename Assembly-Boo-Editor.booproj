@@ -64,6 +64,8 @@
      <None Include="Assets\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
      <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
      <None Include="Assets\RAIN\Editor\Shaders\RAINShader.shader" />
+     <None Include="Assets\Notes\SaveLoadSystem.txt" />
+     <None Include="Assets\Plugins\BulletUnity\Native\OSX\libbulletc.bundle\Contents\Resources\CMakeLists.txt" />
      <None Include="Assets\PostProcessing\Resources\Shaders\ACES.cginc" />
      <None Include="Assets\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
      <None Include="Assets\PostProcessing\Resources\Shaders\Tonemapping.cginc" />

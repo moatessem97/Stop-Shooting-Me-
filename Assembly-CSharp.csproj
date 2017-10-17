@@ -75,6 +75,7 @@
      <Compile Include="Assets\Extra Assets\Pause Menu Assets\Scripts\Utlities\CoroutineUtlities.cs" />
      <Compile Include="Assets\Extra Assets\Pause Menu Assets\Scripts\Utlities\Rotate.cs" />
      <Compile Include="Assets\ManagerScript.cs" />
+     <Compile Include="Assets\Pewpew.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
      <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
@@ -125,6 +126,7 @@
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\CanvasController.cs" />
      <Compile Include="Assets\Scripts\CanvasController_Paused.cs" />
+     <Compile Include="Assets\Scripts\CharacterAbilities.cs" />
      <Compile Include="Assets\Scripts\MenuController.cs" />
      <Compile Include="Assets\Scripts\MenuController_Paused.cs" />
      <Compile Include="Assets\Scripts\NextLev.cs" />
@@ -146,6 +148,8 @@
      <None Include="Assets\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
      <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
      <None Include="Assets\RAIN\Editor\Shaders\RAINShader.shader" />
+     <None Include="Assets\Notes\SaveLoadSystem.txt" />
+     <None Include="Assets\Plugins\BulletUnity\Native\OSX\libbulletc.bundle\Contents\Resources\CMakeLists.txt" />
      <None Include="Assets\PostProcessing\Resources\Shaders\ACES.cginc" />
      <None Include="Assets\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
      <None Include="Assets\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
