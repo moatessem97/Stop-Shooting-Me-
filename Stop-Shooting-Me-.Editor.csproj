@@ -209,6 +209,7 @@
     <None Include="Assets\Extra Assets\Pause Menu Assets\Fonts\exo\SIL Open Font License.txt" />
     <None Include="Assets\Extra Assets\Pause Menu Assets\Fonts\open-sans\Apache License.txt" />
     <None Include="Assets\Notes\SaveLoadSystem.txt" />
+    <None Include="Assets\Plugins\BulletUnity\Native\OSX\libbulletc.bundle\Contents\Resources\CMakeLists.txt" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />

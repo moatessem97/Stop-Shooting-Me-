@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using RAIN.Core;
 
 public class RocketObject : MonoBehaviour {
 	public float Radius = 5.0f;
@@ -24,6 +25,11 @@ public class RocketObject : MonoBehaviour {
 			if (hit.GetComponent<Rigidbody>()){
 
 				hit.GetComponent<Rigidbody>().AddExplosionForce(Power, grenadeOrigin, Radius, ExplosiveKick); //if we hit any rigidbodies then add force based off our power, the position of the explosion object
+
+                if (hit.GetComponentInChildren<AIRig>())
+                {
+                    hit.GetComponentInChildren<AIRig>().AI.WorkingMemory.SetItem<bool>("isDead", true);
+                }
 
 				Destroy(gameObject);    //the radius and finally the explosive lift. Afterwards destroy the game object
 
