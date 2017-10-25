@@ -96,6 +96,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\3D Models\RocketParticleSc.cs" />
     <Compile Include="Assets\AI\Actions\Died.cs" />
     <Compile Include="Assets\AudioTriggerScript.cs" />
     <Compile Include="Assets\Buttons and Doors\AutoDoorScript1.cs" />
@@ -110,7 +111,6 @@
     <Compile Include="Assets\Buttons and Doors\NewButton\RobotTrigger.cs" />
     <Compile Include="Assets\Buttons and Doors\PickUp1.cs" />
     <Compile Include="Assets\Buttons and Doors\Pickupable.cs" />
-    <Compile Include="Assets\Extra Assets\Controller Tester\Scripts\DetectUnknownControllerMappings.cs" />
     <Compile Include="Assets\Extra Assets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
     <Compile Include="Assets\Extra Assets\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
     <Compile Include="Assets\Extra Assets\EffectExamples\Shared\Scripts\GunAim.cs" />
