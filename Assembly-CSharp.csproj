@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\3D Models\RocketParticleSc.cs" />
      <Compile Include="Assets\AI\Actions\Died.cs" />
      <Compile Include="Assets\Buttons and Doors\AutoDoorScript1.cs" />
      <Compile Include="Assets\Buttons and Doors\ButtonMovement.cs" />
