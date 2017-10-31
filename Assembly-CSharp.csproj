@@ -84,6 +84,11 @@
      <Compile Include="Assets\Scripts\CanvasController.cs" />
      <Compile Include="Assets\Scripts\CanvasController_Paused.cs" />
      <Compile Include="Assets\Scripts\CharacterAbilities.cs" />
+     <Compile Include="Assets\Scripts\CharacterScripts\SSMThirdPersonCharacter.cs" />
+     <Compile Include="Assets\Scripts\CharacterScripts\SSMThirdPersonCharacterInput.cs" />
+     <Compile Include="Assets\Scripts\CharacterScripts\ThirdPersonCharacter.cs" />
+     <Compile Include="Assets\Scripts\CharacterScripts\ThirdPersonUserControl.cs" />
+     <Compile Include="Assets\Scripts\CharacterScripts\ThirdPersonUserControl1.cs" />
      <Compile Include="Assets\Scripts\ManagerScript.cs" />
      <Compile Include="Assets\Scripts\MenuController.cs" />
      <Compile Include="Assets\Scripts\MenuController_Paused.cs" />
@@ -93,9 +98,6 @@
      <Compile Include="Assets\Scripts\PickUpSc.cs" />
      <Compile Include="Assets\Scripts\RocketObject.cs" />
      <Compile Include="Assets\Scripts\RocketPlayer.cs" />
-     <Compile Include="Assets\Scripts\ThirdPersonCharacter.cs" />
-     <Compile Include="Assets\Scripts\ThirdPersonUserControl.cs" />
-     <Compile Include="Assets\Scripts\ThirdPersonUserControl1.cs" />
      <None Include="Assets\Extra Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
      <None Include="Assets\RAIN\Editor\Shaders\RAINShader.shader" />
      <None Include="Assets\AI\BehaviorTrees\StoopedRobot.txt" />
