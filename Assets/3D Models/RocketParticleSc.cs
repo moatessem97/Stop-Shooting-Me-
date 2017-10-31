@@ -6,6 +6,7 @@ public class RocketParticleSc : MonoBehaviour {
     public float Radius = 5.0f;
     public float Power = 10.0f;
     public float ExplosiveKick = 1.0f;
+    public ParticleSystem Boom;
 
     void Start()
     {
@@ -16,7 +17,7 @@ public class RocketParticleSc : MonoBehaviour {
 
     void OnParticleCollision(GameObject other)
     {
-
+        ParticleSystem clone;
         Debug.Log(other.name);
         Vector3 grenadeOrigin = transform.position;
 
@@ -42,6 +43,8 @@ public class RocketParticleSc : MonoBehaviour {
 
                 hit.GetComponent<Rigidbody>().AddExplosionForce(Power, grenadeOrigin, Radius, ExplosiveKick); //if we hit any rigidbodies then add force based off our power, the position of the explosion object
             }
+        
+        clone = Instantiate(Boom, transform.position, transform.rotation);
         Destroy(gameObject);    //the radius and finally the explosive lift. Afterwards destroy the game object
 
     }
