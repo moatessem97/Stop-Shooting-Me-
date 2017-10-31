@@ -38,14 +38,16 @@ public class SSMThirdPersonCharacterInput : MonoBehaviour {
         {
             if (!Jump)
             {
-                Jump = Input.GetButtonDown("Jump1");
+                //Jump = Input.GetButtonDown("Jump1");
+                Jump = Input.GetKeyDown(KeyCode.Joystick1Button3);
             }
         }
         if (Controller2)
         {
             if (!Jump)
             {
-                Jump = Input.GetButtonDown("Jump2");
+                //Jump = Input.GetButtonDown("Jump2");
+                Jump = Input.GetKeyDown(KeyCode.Joystick2Button3);
             }
         }
 
@@ -104,6 +106,7 @@ public class SSMThirdPersonCharacterInput : MonoBehaviour {
         {
             float h1 = Input.GetAxis("HorizontalJ");
             float v1 = Input.GetAxis("VerticalJ");
+
 
             if (cam != null)
             {
