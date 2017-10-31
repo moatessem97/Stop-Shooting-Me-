@@ -7,8 +7,10 @@ public class RocketObject : MonoBehaviour {
 	public float Radius = 5.0f;
 	public float Power = 10.0f;
 	public float ExplosiveKick = 1.0f;
+   
 
-	void Start() {
+
+    void Start() {
 
 		Destroy(gameObject, 3);
 
@@ -41,6 +43,7 @@ public class RocketObject : MonoBehaviour {
 
                 hit.GetComponent<Rigidbody>().AddExplosionForce(Power, grenadeOrigin, Radius, ExplosiveKick); //if we hit any rigidbodies then add force based off our power, the position of the explosion object
             }
+        
 				Destroy(gameObject);    //the radius and finally the explosive lift. Afterwards destroy the game object
 
 			}
