@@ -154,14 +154,6 @@
       <Project>{06B3FBDE-55A2-17E8-38C3-D6E31E0D2CC5}</Project>
       <Name>Stop-Shooting-Me-</Name>
     </ProjectReference>
-    <ProjectReference Include="Stop-Shooting-Me-.Plugins.csproj">
-      <Project>{A5B649A4-A162-4AF1-C83B-884B8EC57883}</Project>
-      <Name>Stop-Shooting-Me-.Plugins</Name>
-    </ProjectReference>
-    <ProjectReference Include="Stop-Shooting-Me-.Editor.Plugins.csproj">
-      <Project>{2D4062D9-2393-7014-BCB1-E5D617A44D6D}</Project>
-      <Name>Stop-Shooting-Me-.Editor.Plugins</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\RAIN\Editor\ScriptTemplates\ActionTemplate_CS.cs" />
@@ -174,7 +166,6 @@
     <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
     <None Include="Assets\RAIN\Editor\Shaders\RAINShader.shader" />
     <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
-    <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
