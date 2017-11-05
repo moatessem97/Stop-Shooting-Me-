@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(SSMThirdPersonCharacter))]
+//[RequireComponent(typeof(SSMThirdPersonCharacter))]
 public class SSMThirdPersonCharacterInput : MonoBehaviour {
     private SSMThirdPersonCharacter character;
     [SerializeField]
