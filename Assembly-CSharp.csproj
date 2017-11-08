@@ -69,11 +69,6 @@
      <Compile Include="Assets\Extra Assets\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
      <Compile Include="Assets\Extra Assets\EffectExamples\Shared\Scripts\GunAim.cs" />
      <Compile Include="Assets\Extra Assets\EffectExamples\Shared\Scripts\GunShoot.cs" />
-     <Compile Include="Assets\Extra Assets\EffectExamples\Shared\Scripts\ParticleCollision.cs" />
-     <Compile Include="Assets\Extra Assets\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
-     <Compile Include="Assets\Extra Assets\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
-     <Compile Include="Assets\Extra Assets\GemExample\Scripts\DemoTimeOfDay.cs" />
-     <Compile Include="Assets\Extra Assets\GemExample\Scripts\Orbit.cs" />
      <Compile Include="Assets\Scripts\AIScripts\Ragdoller.cs" />
      <Compile Include="Assets\Scripts\AIScripts\WeakAIScript.cs" />
      <Compile Include="Assets\Scripts\AudioTriggerScript.cs" />
@@ -81,14 +76,10 @@
      <Compile Include="Assets\Scripts\ButtonController_Paused.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\CameraFollowTutorial.cs" />
-     <Compile Include="Assets\Scripts\CanvasController.cs" />
-     <Compile Include="Assets\Scripts\CanvasController_Paused.cs" />
      <Compile Include="Assets\Scripts\CharacterAbilities.cs" />
      <Compile Include="Assets\Scripts\CharacterScripts\SSMThirdPersonCharacter.cs" />
      <Compile Include="Assets\Scripts\CharacterScripts\SSMThirdPersonCharacterInput.cs" />
-     <Compile Include="Assets\Scripts\CharacterScripts\ThirdPersonCharacter.cs" />
-     <Compile Include="Assets\Scripts\CharacterScripts\ThirdPersonUserControl.cs" />
-     <Compile Include="Assets\Scripts\CharacterScripts\ThirdPersonUserControl1.cs" />
+     <Compile Include="Assets\Scripts\CharacterScripts\ThirdPersonController2.cs" />
      <Compile Include="Assets\Scripts\ManagerScript.cs" />
      <Compile Include="Assets\Scripts\MenuController.cs" />
      <Compile Include="Assets\Scripts\MenuController_Paused.cs" />
@@ -98,13 +89,14 @@
      <Compile Include="Assets\Scripts\PickUpSc.cs" />
      <Compile Include="Assets\Scripts\RocketObject.cs" />
      <Compile Include="Assets\Scripts\RocketPlayer.cs" />
+     <Compile Include="Assets\Scripts\WeaponSwitcher.cs" />
      <None Include="Assets\Extra Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
      <None Include="Assets\RAIN\Editor\Shaders\RAINShader.shader" />
      <None Include="Assets\AI\BehaviorTrees\StoopedRobot.txt" />
      <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
-     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\Extra Assets\Gem\Shaders\Gem.shader" />
+     <None Include="Assets\sci-fi-weapons\README.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -132,10 +124,6 @@
  <Reference Include="RAINMetaform">
  <HintPath>C:/Users/Asus/Documents/GitHub/Stop-Shooting-Me-/Assets/RAIN/RAINMetaform.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{EA5B3129-C1A7-D2A4-8A14-825D98F32F76}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
