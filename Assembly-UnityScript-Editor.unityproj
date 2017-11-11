@@ -51,15 +51,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\RAIN\Editor\ScriptTemplates\ActionTemplate_JS.js" />
-     <Compile Include="Assets\RAIN\Editor\ScriptTemplates\DecisionTemplate_JS.js" />
+     <Compile Include="Assets\Extra Assets\RAIN\Editor\ScriptTemplates\ActionTemplate_JS.js" />
+     <Compile Include="Assets\Extra Assets\RAIN\Editor\ScriptTemplates\DecisionTemplate_JS.js" />
      <None Include="Assets\Extra Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
-     <None Include="Assets\RAIN\Editor\Shaders\RAINShader.shader" />
+     <None Include="Assets\Extra Assets\RAIN\Editor\Shaders\RAINShader.shader" />
      <None Include="Assets\AI\BehaviorTrees\StoopedRobot.txt" />
-     <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
+     <None Include="Assets\Extra Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\Extra Assets\Gem\Shaders\Gem.shader" />
-     <None Include="Assets\sci-fi-weapons\README.txt" />
+     <None Include="Assets\Extra Assets\sci-fi-weapons\README.txt" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
@@ -118,16 +118,16 @@
  <HintPath>D:/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="RAIN">
- <HintPath>C:/Users/Asus/Documents/GitHub/Stop-Shooting-Me-/Assets/RAIN/RAIN.dll</HintPath>
+ <HintPath>C:/Users/Asus/Documents/GitHub/Stop-Shooting-Me-/Assets/Extra Assets/RAIN/RAIN.dll</HintPath>
  </Reference>
  <Reference Include="RAINMetaform">
- <HintPath>C:/Users/Asus/Documents/GitHub/Stop-Shooting-Me-/Assets/RAIN/RAINMetaform.dll</HintPath>
+ <HintPath>C:/Users/Asus/Documents/GitHub/Stop-Shooting-Me-/Assets/Extra Assets/RAIN/RAINMetaform.dll</HintPath>
  </Reference>
  <Reference Include="RAINEditor">
- <HintPath>C:/Users/Asus/Documents/GitHub/Stop-Shooting-Me-/Assets/RAIN/Editor/RAINEditor.dll</HintPath>
+ <HintPath>C:/Users/Asus/Documents/GitHub/Stop-Shooting-Me-/Assets/Extra Assets/RAIN/Editor/RAINEditor.dll</HintPath>
  </Reference>
  <Reference Include="RAINMetaformEditor">
- <HintPath>C:/Users/Asus/Documents/GitHub/Stop-Shooting-Me-/Assets/RAIN/Editor/RAINMetaformEditor.dll</HintPath>
+ <HintPath>C:/Users/Asus/Documents/GitHub/Stop-Shooting-Me-/Assets/Extra Assets/RAIN/Editor/RAINMetaformEditor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
