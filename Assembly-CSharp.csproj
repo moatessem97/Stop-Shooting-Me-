@@ -61,6 +61,7 @@
      <Compile Include="Assets\Buttons and Doors\MK2Door.cs" />
      <Compile Include="Assets\Buttons and Doors\NewButton\AutomatedDoors.cs" />
      <Compile Include="Assets\Buttons and Doors\NewButton\BridgeTrigger.cs" />
+     <Compile Include="Assets\Buttons and Doors\NewButton\BridgeTriggerObjects.cs" />
      <Compile Include="Assets\Buttons and Doors\NewButton\ButtonToDoorPuzzleScript.cs" />
      <Compile Include="Assets\Buttons and Doors\NewButton\RobotTrigger.cs" />
      <Compile Include="Assets\Buttons and Doors\PickUp1.cs" />
@@ -73,7 +74,6 @@
      <Compile Include="Assets\Scripts\AIScripts\WeakAIScript.cs" />
      <Compile Include="Assets\Scripts\AudioTriggerScript.cs" />
      <Compile Include="Assets\Scripts\ButtonController.cs" />
-     <Compile Include="Assets\Scripts\ButtonController_Paused.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\CameraFollowTutorial.cs" />
      <Compile Include="Assets\Scripts\CharacterAbilities.cs" />
@@ -81,8 +81,6 @@
      <Compile Include="Assets\Scripts\CharacterScripts\SSMThirdPersonCharacterInput.cs" />
      <Compile Include="Assets\Scripts\CharacterScripts\ThirdPersonController2.cs" />
      <Compile Include="Assets\Scripts\ManagerScript.cs" />
-     <Compile Include="Assets\Scripts\MenuController.cs" />
-     <Compile Include="Assets\Scripts\MenuController_Paused.cs" />
      <Compile Include="Assets\Scripts\NextLev.cs" />
      <Compile Include="Assets\Scripts\Pewpew.cs" />
      <Compile Include="Assets\Scripts\PickupItem1.cs" />
@@ -91,12 +89,12 @@
      <Compile Include="Assets\Scripts\RocketPlayer.cs" />
      <Compile Include="Assets\Scripts\WeaponSwitcher.cs" />
      <None Include="Assets\Extra Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
-     <None Include="Assets\RAIN\Editor\Shaders\RAINShader.shader" />
+     <None Include="Assets\Extra Assets\RAIN\Editor\Shaders\RAINShader.shader" />
      <None Include="Assets\AI\BehaviorTrees\StoopedRobot.txt" />
-     <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
+     <None Include="Assets\Extra Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\Extra Assets\Gem\Shaders\Gem.shader" />
-     <None Include="Assets\sci-fi-weapons\README.txt" />
+     <None Include="Assets\Extra Assets\sci-fi-weapons\README.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -119,10 +117,10 @@
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
  </Reference>
  <Reference Include="RAIN">
- <HintPath>C:/Users/Asus/Documents/GitHub/Stop-Shooting-Me-/Assets/RAIN/RAIN.dll</HintPath>
+ <HintPath>C:/Users/Asus/Documents/GitHub/Stop-Shooting-Me-/Assets/Extra Assets/RAIN/RAIN.dll</HintPath>
  </Reference>
  <Reference Include="RAINMetaform">
- <HintPath>C:/Users/Asus/Documents/GitHub/Stop-Shooting-Me-/Assets/RAIN/RAINMetaform.dll</HintPath>
+ <HintPath>C:/Users/Asus/Documents/GitHub/Stop-Shooting-Me-/Assets/Extra Assets/RAIN/RAINMetaform.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
