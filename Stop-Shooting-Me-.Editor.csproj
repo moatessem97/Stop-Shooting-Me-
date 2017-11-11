@@ -136,17 +136,17 @@
     <Reference Include="UnityEditor.iOS.Extensions.Common">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
-    <Reference Include="RAIN">
-      <HintPath>Assets\RAIN\RAIN.dll</HintPath>
+    <Reference Include="RAINMetaformEditor">
+      <HintPath>Assets\RAIN\Editor\RAINMetaformEditor.dll</HintPath>
     </Reference>
     <Reference Include="RAINMetaform">
       <HintPath>Assets\RAIN\RAINMetaform.dll</HintPath>
     </Reference>
+    <Reference Include="RAIN">
+      <HintPath>Assets\RAIN\RAIN.dll</HintPath>
+    </Reference>
     <Reference Include="RAINEditor">
       <HintPath>Assets\RAIN\Editor\RAINEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="RAINMetaformEditor">
-      <HintPath>Assets\RAIN\Editor\RAINMetaformEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -163,10 +163,10 @@
     <None Include="Assets\AI\BehaviorTrees\StoopedRobot.txt" />
     <None Include="Assets\Extra Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
     <None Include="Assets\Extra Assets\Gem\Shaders\Gem.shader" />
+    <None Include="Assets\Extra Assets\sci-fi-weapons\README.txt" />
     <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
     <None Include="Assets\RAIN\Editor\Shaders\RAINShader.shader" />
     <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
-    <None Include="Assets\sci-fi-weapons\README.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
