@@ -115,6 +115,8 @@
     <Compile Include="Assets\Scripts\ButtonController.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\CameraFollowTutorial.cs" />
+    <Compile Include="Assets\Scripts\CanvasController.cs" />
+    <Compile Include="Assets\Scripts\CanvasController_Paused.cs" />
     <Compile Include="Assets\Scripts\CharacterAbilities.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\SSMThirdPersonCharacter.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\SSMThirdPersonCharacterInput.cs" />
@@ -126,7 +128,6 @@
     <Compile Include="Assets\Scripts\PickUpSc.cs" />
     <Compile Include="Assets\Scripts\RocketObject.cs" />
     <Compile Include="Assets\Scripts\RocketPlayer.cs" />
-    <Compile Include="Assets\Scripts\WeaponSwitcher.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AI\BehaviorTrees\StoopedRobot.txt" />
