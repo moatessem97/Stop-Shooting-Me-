@@ -1,13 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Buttons and Doors\NewButton\BridgeTriggerObjects.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scenes\M_Level Notes.txt">
     <Files>
       <File FileName="Assets\Scripts\CameraFollow.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\CameraFollowTutorial.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\WeaponSwitcher.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\ButtonController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Buttons and Doors\NewButton\BridgeTrigger.cs" Line="7" Column="27" />
-      <File FileName="Assets\Buttons and Doors\NewButton\BridgeTriggerObjects.cs" Line="11" Column="44" />
+      <File FileName="Assets\Buttons and Doors\NewButton\BridgeTrigger.cs" Line="1" Column="1" />
+      <File FileName="Assets\Buttons and Doors\NewButton\BridgeTriggerObjects.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scenes\M_Level Notes.txt" Line="6" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

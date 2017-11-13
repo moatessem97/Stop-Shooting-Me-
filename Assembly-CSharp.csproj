@@ -89,6 +89,7 @@
      <Compile Include="Assets\Scripts\RocketPlayer.cs" />
      <Compile Include="Assets\Scripts\WeaponSwitcher.cs" />
      <None Include="Assets\Extra Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
+     <None Include="Assets\Scenes\M_Level Notes.txt" />
      <None Include="Assets\RAIN\Editor\Shaders\RAINShader.shader" />
      <None Include="Assets\AI\BehaviorTrees\StoopedRobot.txt" />
      <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
