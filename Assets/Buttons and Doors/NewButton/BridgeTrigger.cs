@@ -10,7 +10,10 @@ public class BridgeTrigger : MonoBehaviour
     {
         if(Player.gameObject.tag == "Player")
         {
-            bridge.SetBool("Activated", true);
+            if (Input.GetButtonDown("Use"))
+            {
+                bridge.SetBool("Activated", true);
+            }
         }
     }
 }

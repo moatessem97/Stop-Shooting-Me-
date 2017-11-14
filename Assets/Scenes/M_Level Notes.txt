@@ -1,6 +1,6 @@
 Both Levels Players have to complete three puzzles to get three orbs that when brought back to the centre of the level trigger the exit to the next.
 
 Level Structure/Puzzles:
-M_Level1: Entrance: Weighted Ball Puzzle, Left Room: Carrying key item across chasm and ledges. Right Room: Swarm Room, Picking up Orb locks room and enemies spawn and try to swarm the players. Collecting all three orbs extends the bridge and allows the players to reach the room exit.
+M_Level1: Entrance: Weighted Ball Puzzle, Left Room: [Carrying key item across chasm and ledges] - changing, Thoughts, carrying key item past moving surfaces and large gaps. Right Room: Swarm Room, Picking up Orb locks room and enemies spawn and try to swarm the players. Collecting all three orbs extends the bridge and allows the players to reach the room exit.
 
 M_Level2: Entrance and Exit combined, collecting orbs opens exit, Left L-pipe Room: Thinking Tram like Puzzle where players have to focus water on targets to keep the tram moving to the end so they can get orb, Centre Double tier room: Maze with one player on the upper level directing the lower level player and opening doors by pushing certain objects, U shaped room: ...
