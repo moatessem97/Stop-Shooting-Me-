@@ -82,11 +82,11 @@
     <Reference Include="UnityEditor.iOS.Extensions.Common">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
-    <Reference Include="RAINMetaform">
-      <HintPath>Assets\RAIN\RAINMetaform.dll</HintPath>
-    </Reference>
     <Reference Include="RAIN">
       <HintPath>Assets\RAIN\RAIN.dll</HintPath>
+    </Reference>
+    <Reference Include="RAINMetaform">
+      <HintPath>Assets\RAIN\RAINMetaform.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -115,9 +115,8 @@
     <Compile Include="Assets\Scripts\ButtonController.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\CameraFollowTutorial.cs" />
-    <Compile Include="Assets\Scripts\CanvasController.cs" />
-    <Compile Include="Assets\Scripts\CanvasController_Paused.cs" />
     <Compile Include="Assets\Scripts\CharacterAbilities.cs" />
+    <Compile Include="Assets\Scripts\CharacterScripts\GroundedColliderCheck.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\SSMThirdPersonCharacter.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\SSMThirdPersonCharacterInput.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\ThirdPersonController2.cs" />
@@ -128,6 +127,7 @@
     <Compile Include="Assets\Scripts\PickUpSc.cs" />
     <Compile Include="Assets\Scripts\RocketObject.cs" />
     <Compile Include="Assets\Scripts\RocketPlayer.cs" />
+    <Compile Include="Assets\Scripts\WeaponSwitcher.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AI\BehaviorTrees\StoopedRobot.txt" />

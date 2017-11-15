@@ -4,7 +4,7 @@ using UnityEngine;
 
 //[RequireComponent(typeof(SSMThirdPersonCharacter))]
 public class SSMThirdPersonCharacterInput : MonoBehaviour {
-    private SSMThirdPersonCharacter character;
+    private ThirdPersonController2 character;
     [SerializeField]
     private Transform cam;
     private Vector3 camForward, Move;
@@ -13,7 +13,7 @@ public class SSMThirdPersonCharacterInput : MonoBehaviour {
 
     private void Start () {
         cam = Camera.main.transform;
-        character = GetComponent<SSMThirdPersonCharacter>();
+        character = GetComponent<ThirdPersonController2>();
         if(gameObject.name == "Player 1")
         {
             player1 = true;
@@ -126,7 +126,7 @@ public class SSMThirdPersonCharacterInput : MonoBehaviour {
             }
         }
 
-        character.Movement(Move, Jump);
+        character.Movement(Move, Jump,Move);
         Jump = false;
     }
 }
