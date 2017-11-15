@@ -81,6 +81,7 @@
      <Compile Include="Assets\Scripts\CharacterScripts\SSMThirdPersonCharacterInput.cs" />
      <Compile Include="Assets\Scripts\CharacterScripts\ThirdPersonController2.cs" />
      <Compile Include="Assets\Scripts\ConsoleTrigger.cs" />
+     <Compile Include="Assets\Scripts\M_Level1DoorScript.cs" />
      <Compile Include="Assets\Scripts\ManagerScript.cs" />
      <Compile Include="Assets\Scripts\NextLev.cs" />
      <Compile Include="Assets\Scripts\Pewpew.cs" />
@@ -90,11 +91,12 @@
      <Compile Include="Assets\Scripts\RocketPlayer.cs" />
      <Compile Include="Assets\Scripts\RotatorIcon.cs" />
      <Compile Include="Assets\Scripts\WeaponSwitcher.cs" />
+     <Compile Include="Assets\Scripts\WeightBasketScript.cs" />
      <None Include="Assets\Extra Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
-     <None Include="Assets\Scenes\M_Level Notes.txt" />
      <None Include="Assets\RAIN\Editor\Shaders\RAINShader.shader" />
      <None Include="Assets\AI\BehaviorTrees\StoopedRobot.txt" />
      <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
+     <None Include="Assets\Scenes\M_Level Notes.txt" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\Extra Assets\Gem\Shaders\Gem.shader" />
      <None Include="Assets\Extra Assets\sci-fi-weapons\README.txt" />

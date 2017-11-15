@@ -1,6 +1,6 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scenes\M_Level Notes.txt">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PickUpSc.cs">
     <Files>
       <File FileName="Assets\Scripts\CameraFollow.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\CameraFollowTutorial.cs" Line="1" Column="1" />
@@ -8,7 +8,8 @@
       <File FileName="Assets\Scripts\ButtonController.cs" Line="1" Column="1" />
       <File FileName="Assets\Buttons and Doors\NewButton\BridgeTrigger.cs" Line="1" Column="1" />
       <File FileName="Assets\Buttons and Doors\NewButton\BridgeTriggerObjects.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scenes\M_Level Notes.txt" Line="6" Column="6" />
+      <File FileName="Assets\Scenes\M_Level Notes.txt" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PickUpSc.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
