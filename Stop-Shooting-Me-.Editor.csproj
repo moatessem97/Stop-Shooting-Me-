@@ -136,17 +136,17 @@
     <Reference Include="UnityEditor.iOS.Extensions.Common">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
-    <Reference Include="RAINMetaformEditor">
-      <HintPath>Assets\RAIN\Editor\RAINMetaformEditor.dll</HintPath>
+    <Reference Include="RAIN">
+      <HintPath>Assets\RAIN\RAIN.dll</HintPath>
     </Reference>
     <Reference Include="RAINMetaform">
       <HintPath>Assets\RAIN\RAINMetaform.dll</HintPath>
     </Reference>
-    <Reference Include="RAIN">
-      <HintPath>Assets\RAIN\RAIN.dll</HintPath>
-    </Reference>
     <Reference Include="RAINEditor">
       <HintPath>Assets\RAIN\Editor\RAINEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="RAINMetaformEditor">
+      <HintPath>Assets\RAIN\Editor\RAINMetaformEditor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -166,6 +166,7 @@
     <None Include="Assets\Extra Assets\sci-fi-weapons\README.txt" />
     <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
     <None Include="Assets\RAIN\Editor\Shaders\RAINShader.shader" />
+    <None Include="Assets\Scenes\M_Level Notes.txt" />
     <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
