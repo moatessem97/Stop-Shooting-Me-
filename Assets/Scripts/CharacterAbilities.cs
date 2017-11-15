@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterAbilities : MonoBehaviour
 {
     //Both Players Need a PickUp Object
     //Both Need a Gun Object and sight to use ability
-    //Input Manager needs Switch input variable, key q controller y
+    //Input Manager needs Switch input variable
+    //IMPORTANT: SCRIPT NEEDS TO BE DUPLICATED AND INDIVIDUAL PLAYERS INPUTS MUST BE SUBSTITUTED IN.
 
     //Fire Variables
     public Rigidbody rocket;
@@ -18,7 +20,17 @@ public class CharacterAbilities : MonoBehaviour
     private bool IsItem = false;
 
     //TriggerSwitch
-    bool cycleAbility = false;
+    //bool cycleAbility = false;
+
+    int currentWeaponID;
+    //weaponIconOne
+    //weaponIconTwo
+    //weaponIconThree
+
+    void Start()
+    {
+        currentWeaponID = 0;
+    }
 
     // Use this for initialization
     private void OnTriggerStay(Collider other)
@@ -40,47 +52,75 @@ public class CharacterAbilities : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update ()
+    void PickUp()
     {
-        if(Input.GetButtonDown("Switch"))
+        if (!IsItem)
         {
-            cycleAbility = !cycleAbility;
+            return;
         }
-        if (cycleAbility == false)
+        myItem.transform.position = gameObject.transform.position;
+        myItem.transform.rotation = gameObject.transform.rotation;
+        if (Input.GetButtonDown("Fire3"))
         {
-            if (!IsItem)
-            {
-                return;
-            }
-            myItem.transform.position = gameObject.transform.position;
-            myItem.transform.rotation = gameObject.transform.rotation;
-            if (Input.GetButtonDown("Fire3"))
-            {
-                IsItem = false;
-                myItem.GetComponent<Rigidbody>().useGravity = true;
-                myItem.GetComponent<Collider>().enabled = true;
-                myItem = null;
-            }
-            if (Input.GetButtonDown("Fire4"))
-            {
-                IsItem = false;
-                myItem.GetComponent<Rigidbody>().useGravity = true;
-                myItem.GetComponent<Collider>().enabled = true;
-                myItem.GetComponent<Rigidbody>().velocity = transform.TransformDirection(Vector3.forward * 100f);
-                myItem = null;
-            }
+            IsItem = false;
+            myItem.GetComponent<Rigidbody>().useGravity = true;
+            myItem.GetComponent<Collider>().enabled = true;
+            myItem = null;
         }
+        if (Input.GetButtonDown("Fire4"))
+        {
+            IsItem = false;
+            myItem.GetComponent<Rigidbody>().useGravity = true;
+            myItem.GetComponent<Collider>().enabled = true;
+            myItem.GetComponent<Rigidbody>().velocity = transform.TransformDirection(Vector3.forward * 100f);
+            myItem = null;
+        }
+    }
 
-        if (cycleAbility == true)
+    void CycleWeapon()
+    {
+        if (currentWeaponID >= 3)
         {
-            if (Input.GetButtonDown("Fire1"))
+            currentWeaponID = 0;
+        }
+        else
+        {
+            currentWeaponID++;
+        }
+    }
+
+    void UseCurrentWeapon()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            if (currentWeaponID == 0)
             {
                 Rigidbody clone;
 
                 clone = Instantiate(rocket, transform.position, transform.rotation); //the clone variable holds our instantiate action
                 clone.velocity = transform.TransformDirection(Vector3.forward * ThrowPower); //applies force to our prefab using the "forward" position times our throwPower variable
             }
+            else if(currentWeaponID == 1)
+            {
+                //Balloon Weapon
+            }
+            else if (currentWeaponID == 2)
+            {
+                //Hose Weapon
+            }
         }
+    }
+
+    // Update is called once per frame
+    void Update ()
+    {
+        PickUp();
+
+        if(Input.GetButtonDown("Switch"))
+        {
+            CycleWeapon();
+        }
+
+        UseCurrentWeapon();
     }
 }

@@ -39,7 +39,7 @@ public class SSMThirdPersonCharacterInput : MonoBehaviour {
             if (!Jump)
             {
                 //Jump = Input.GetButtonDown("Jump1");
-                Jump = Input.GetKeyDown(KeyCode.Joystick1Button3);
+                Jump = Input.GetKeyDown(KeyCode.Joystick1Button0);
             }
         }
         if (Controller2)
@@ -47,7 +47,7 @@ public class SSMThirdPersonCharacterInput : MonoBehaviour {
             if (!Jump)
             {
                 //Jump = Input.GetButtonDown("Jump2");
-                Jump = Input.GetKeyDown(KeyCode.Joystick2Button3);
+                Jump = Input.GetKeyDown(KeyCode.Joystick2Button0);
             }
         }
 
