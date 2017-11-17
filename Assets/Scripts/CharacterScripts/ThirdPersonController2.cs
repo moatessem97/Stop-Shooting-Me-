@@ -29,7 +29,7 @@ public class ThirdPersonController2 : MonoBehaviour {
             move.Normalize();
             move2.Normalize();
         }
-        // movement vectors and change the vector to local\
+        // movement vectors and change the vector to local space.
         move = transform.InverseTransformDirection(move);
         //groundChecker();
         getNormalToGround();
@@ -132,10 +132,10 @@ public class ThirdPersonController2 : MonoBehaviour {
             // air controll
             //rb.AddForce(airMove*100f);
             //rb.velocity = new Vector3(rb.velocity.x + airMove.x, rb.velocity.y, rb.velocity.z + airMove.z);
+            
+            rb.AddForce(airMove * 34f);
+            Vector3.ClampMagnitude(rb.velocity, 50f);
             rb.AddForce(EGF);
-            rb.AddForce(airMove * 100f);
-
-            // grounded stuff
         }
     }
 

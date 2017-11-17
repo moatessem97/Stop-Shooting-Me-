@@ -8,9 +8,17 @@ public class SSMThirdPersonCharacterInput : MonoBehaviour {
     [SerializeField]
     private Transform cam;
     private Vector3 camForward, Move;
-    private bool Jump, player1;
+    private bool Jump, player1,Primary,Secondary,isRocket,isWater,isPickUp,isMelee;
     public bool Keyboard, Controller1, Controller2;
+    private PickUpSc pickUpScript;
+    private RocketPlayer rocketGunShootScript;
+    private PickUpSc pickUpGunScript;
+    // water gun script here
+    public GameObject CurrWeapon;
+    [SerializeField]
+    private float rateOfFire,FireTime;
 
+    // weapon number is based on each weapon 
     private void Start () {
         cam = Camera.main.transform;
         character = GetComponent<ThirdPersonController2>();
@@ -25,35 +33,116 @@ public class SSMThirdPersonCharacterInput : MonoBehaviour {
             Controller1 = true;
         }
 	}
-	
+	public void weaponInput()
+    {
+        if(CurrWeapon.name == "Rocket")
+        {
+            Debug.Log("RocketGun");
+            rateOfFire = 1f;
+            isRocket = true;
+            isPickUp = false;
+            isWater = false;
+            isMelee = false;
+            rocketGunShootScript = CurrWeapon.GetComponentInChildren<RocketPlayer>();
+        }
+        else if (CurrWeapon.name == "Pistol27")
+        {
+            Debug.Log("pick up gun");
+            rateOfFire = 2f;
+            isRocket = false;
+            isPickUp = true;
+            isWater = false;
+            isMelee = false;
+            pickUpGunScript = CurrWeapon.GetComponentInChildren<PickUpSc>();
+        }
+        else if (CurrWeapon.name == "Sniper")
+        {
+            Debug.Log("Water Hose");
+            rateOfFire = 7f;
+            isRocket = false;
+            isPickUp = false;
+            isWater = true;
+            isMelee = false;
+        }
+        // add mele weapon too
+    }
 	private void Update () {
+        buttonInputs();
+       
+	}
+    private void buttonInputs()
+    {
         if (Keyboard)
         {
             if (!Jump)
             {
                 Jump = Input.GetButtonDown("Jump");
             }
+            Primary = Input.GetButton("Fire1M");
+            Secondary = Input.GetButton("Fire2M");
         }
         if (Controller1)
         {
             if (!Jump)
             {
-                //Jump = Input.GetButtonDown("Jump1");
-                Jump = Input.GetKeyDown(KeyCode.Joystick1Button0);
+                Jump = Input.GetButtonDown("Jump1");
+                //  Jump = Input.GetKeyDown(KeyCode.Joystick1Button0);
             }
+            Primary = Input.GetButton("Fire1J");
+            Secondary = Input.GetButton("Fire2J");
+            //Primary = Input.GetKeyDown(KeyCode.Joystick1Button2);
+            //Secondary = Input.GetKeyDown(KeyCode.Joystick1Button1);
         }
         if (Controller2)
         {
             if (!Jump)
             {
-                //Jump = Input.GetButtonDown("Jump2");
-                Jump = Input.GetKeyDown(KeyCode.Joystick2Button0);
+                Jump = Input.GetButtonDown("Jump2");
+                //  Jump = Input.GetKeyDown(KeyCode.Joystick2Button0);
+            }
+            Primary = Input.GetButton("Fire1J2");
+            Secondary = Input.GetButton("Fire2J2");
+            //Primary = Input.GetKeyDown(KeyCode.Joystick2Button2);
+            //Secondary = Input.GetKeyDown(KeyCode.Joystick2Button1);
+        }
+        if (Primary && Time.time > FireTime)
+        {
+            FireTime = Time.time + 1 / rateOfFire;
+            if (isRocket)
+            {
+                rocketGunShootScript.ShootRocket();
+            }
+            if (isMelee)
+            {
+
+            }
+            if (isWater)
+            {
+
+            }
+            if (isPickUp)
+            {
+                pickUpGunScript.Throw(Primary);
             }
         }
+        if (Secondary && Time.time > FireTime)
+        {
+            FireTime = Time.time + 1 / rateOfFire;
+            if (isMelee)
+            {
 
+            }
+            if (isWater)
+            {
+
+            }
+            if (isPickUp)
+            {
+                pickUpGunScript.pickUPFunction(Secondary);
+            }
+        }
         controllerToggle();
-	}
-
+    }
     private void FixedUpdate()
     {
         myMovement();
