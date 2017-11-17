@@ -9,7 +9,7 @@ public class ButtonController : MonoBehaviour
 
 	public void LoadScene(string SceneToLoad) 
 	{
-		Application.LoadLevel("IntroTutorial");
+		Application.LoadLevel("Loading");
 	}
 
 	public void Quit()

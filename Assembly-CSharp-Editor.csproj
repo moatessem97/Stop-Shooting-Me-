@@ -119,18 +119,6 @@
  <HintPath>D:/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="RAIN">
- <HintPath>C:/Users/Asus/Documents/GitHub/Stop-Shooting-Me-/Assets/Extra Assets/RAIN/RAIN.dll</HintPath>
- </Reference>
- <Reference Include="RAINMetaform">
- <HintPath>C:/Users/Asus/Documents/GitHub/Stop-Shooting-Me-/Assets/Extra Assets/RAIN/RAINMetaform.dll</HintPath>
- </Reference>
- <Reference Include="RAINEditor">
- <HintPath>C:/Users/Asus/Documents/GitHub/Stop-Shooting-Me-/Assets/Extra Assets/RAIN/Editor/RAINEditor.dll</HintPath>
- </Reference>
- <Reference Include="RAINMetaformEditor">
- <HintPath>C:/Users/Asus/Documents/GitHub/Stop-Shooting-Me-/Assets/Extra Assets/RAIN/Editor/RAINMetaformEditor.dll</HintPath>
- </Reference>
- <Reference Include="RAIN">
  <HintPath>C:/Users/Asus/Documents/GitHub/Stop-Shooting-Me-/Assets/RAIN/RAIN.dll</HintPath>
  </Reference>
  <Reference Include="RAINMetaform">

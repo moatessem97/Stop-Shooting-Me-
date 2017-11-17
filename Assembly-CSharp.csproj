@@ -51,7 +51,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\3D Models\ExplosionDestroy.cs" />
      <Compile Include="Assets\3D Models\RocketParticleSc.cs" />
+     <Compile Include="Assets\3D Models\WaterScript.cs" />
      <Compile Include="Assets\AI\Actions\Died.cs" />
      <Compile Include="Assets\Buttons and Doors\AutoDoorScript1.cs" />
      <Compile Include="Assets\Buttons and Doors\ButtonMovement.cs" />
@@ -77,10 +79,12 @@
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\CameraFollowTutorial.cs" />
      <Compile Include="Assets\Scripts\CharacterAbilities.cs" />
+     <Compile Include="Assets\Scripts\CharacterScripts\GroundedColliderCheck.cs" />
      <Compile Include="Assets\Scripts\CharacterScripts\SSMThirdPersonCharacter.cs" />
      <Compile Include="Assets\Scripts\CharacterScripts\SSMThirdPersonCharacterInput.cs" />
      <Compile Include="Assets\Scripts\CharacterScripts\ThirdPersonController2.cs" />
      <Compile Include="Assets\Scripts\ConsoleTrigger.cs" />
+     <Compile Include="Assets\Scripts\Loading.cs" />
      <Compile Include="Assets\Scripts\M_Level1DoorScript.cs" />
      <Compile Include="Assets\Scripts\ManagerScript.cs" />
      <Compile Include="Assets\Scripts\NextLev.cs" />
@@ -90,6 +94,7 @@
      <Compile Include="Assets\Scripts\RocketObject.cs" />
      <Compile Include="Assets\Scripts\RocketPlayer.cs" />
      <Compile Include="Assets\Scripts\RotatorIcon.cs" />
+     <Compile Include="Assets\Scripts\RotatorMenu.cs" />
      <Compile Include="Assets\Scripts\WeaponSwitcher.cs" />
      <Compile Include="Assets\Scripts\WeightBasketScript.cs" />
      <None Include="Assets\Extra Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
@@ -120,12 +125,6 @@
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
- </Reference>
- <Reference Include="RAIN">
- <HintPath>C:/Users/Asus/Documents/GitHub/Stop-Shooting-Me-/Assets/Extra Assets/RAIN/RAIN.dll</HintPath>
- </Reference>
- <Reference Include="RAINMetaform">
- <HintPath>C:/Users/Asus/Documents/GitHub/Stop-Shooting-Me-/Assets/Extra Assets/RAIN/RAINMetaform.dll</HintPath>
  </Reference>
  <Reference Include="RAIN">
  <HintPath>C:/Users/Asus/Documents/GitHub/Stop-Shooting-Me-/Assets/RAIN/RAIN.dll</HintPath>
