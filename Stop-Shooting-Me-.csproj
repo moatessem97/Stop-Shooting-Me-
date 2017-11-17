@@ -92,6 +92,7 @@
   <ItemGroup>
     <Compile Include="Assets\3D Models\ExplosionDestroy.cs" />
     <Compile Include="Assets\3D Models\RocketParticleSc.cs" />
+    <Compile Include="Assets\3D Models\WaterGunScript.cs" />
     <Compile Include="Assets\3D Models\WaterScript.cs" />
     <Compile Include="Assets\AI\Actions\Died.cs" />
     <Compile Include="Assets\Buttons and Doors\AutoDoorScript1.cs" />
@@ -123,6 +124,7 @@
     <Compile Include="Assets\Scripts\CharacterScripts\SSMThirdPersonCharacterInput.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\ThirdPersonController2.cs" />
     <Compile Include="Assets\Scripts\ConsoleTrigger.cs" />
+    <Compile Include="Assets\Scripts\Loading.cs" />
     <Compile Include="Assets\Scripts\M_Level1DoorScript.cs" />
     <Compile Include="Assets\Scripts\ManagerScript.cs" />
     <Compile Include="Assets\Scripts\NextLev.cs" />
@@ -132,6 +134,7 @@
     <Compile Include="Assets\Scripts\RocketObject.cs" />
     <Compile Include="Assets\Scripts\RocketPlayer.cs" />
     <Compile Include="Assets\Scripts\RotatorIcon.cs" />
+    <Compile Include="Assets\Scripts\RotatorMenu.cs" />
     <Compile Include="Assets\Scripts\WeaponSwitcher.cs" />
     <Compile Include="Assets\Scripts\WeightBasketScript.cs" />
   </ItemGroup>

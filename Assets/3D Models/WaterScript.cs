@@ -6,6 +6,10 @@ using RAIN.Core;
 public class WaterScript : MonoBehaviour {
     public ParticleSystem splash;
 
+    private void Start()
+    {
+        Destroy(gameObject, 0.7f);
+    }
     private void createSPLASH()
     {
     
