@@ -118,12 +118,16 @@
     <Compile Include="Assets\Scripts\ButtonController.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\CameraFollowTutorial.cs" />
+    <Compile Include="Assets\Scripts\CHangelevl.cs" />
     <Compile Include="Assets\Scripts\CharacterAbilities.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\GroundedColliderCheck.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\SSMThirdPersonCharacter.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\SSMThirdPersonCharacterInput.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\ThirdPersonController2.cs" />
     <Compile Include="Assets\Scripts\ConsoleTrigger.cs" />
+    <Compile Include="Assets\Scripts\CreditSceneExit.cs" />
+    <Compile Include="Assets\Scripts\Fading.cs" />
+    <Compile Include="Assets\Scripts\InteractionScript.cs" />
     <Compile Include="Assets\Scripts\Loading.cs" />
     <Compile Include="Assets\Scripts\M_Level1DoorScript.cs" />
     <Compile Include="Assets\Scripts\ManagerScript.cs" />
@@ -135,6 +139,7 @@
     <Compile Include="Assets\Scripts\RocketPlayer.cs" />
     <Compile Include="Assets\Scripts\RotatorIcon.cs" />
     <Compile Include="Assets\Scripts\RotatorMenu.cs" />
+    <Compile Include="Assets\Scripts\SplashScreen.cs" />
     <Compile Include="Assets\Scripts\WeaponSwitcher.cs" />
     <Compile Include="Assets\Scripts\WeightBasketScript.cs" />
   </ItemGroup>

@@ -8,8 +8,8 @@ public class SSMThirdPersonCharacterInput : MonoBehaviour {
     [SerializeField]
     private Transform cam;
     private Vector3 camForward, Move;
-    private bool Jump, player1,Primary,Secondary,isRocket,isWater,isPickUp,isMelee;
-    public bool Keyboard, Controller1, Controller2;
+    private bool Jump, player1,Primary,Secondary,isRocket, isWater,isPickUp,isMelee;
+    public bool Keyboard, Controller1, Controller2, Interact;
     private PickUpSc pickUpScript;
     private RocketPlayer rocketGunShootScript;
     private PickUpSc pickUpGunScript;
@@ -81,6 +81,7 @@ public class SSMThirdPersonCharacterInput : MonoBehaviour {
             }
             Primary = Input.GetButton("Fire1M");
             Secondary = Input.GetButton("Fire2M");
+            Interact = Input.GetButton("InteractK");
         }
         if (Controller1)
         {
@@ -91,6 +92,7 @@ public class SSMThirdPersonCharacterInput : MonoBehaviour {
             }
             Primary = Input.GetButton("Fire1J");
             Secondary = Input.GetButton("Fire2J");
+            Interact = Input.GetButton("InteractJ");
             //Primary = Input.GetKeyDown(KeyCode.Joystick1Button2);
             //Secondary = Input.GetKeyDown(KeyCode.Joystick1Button1);
         }
@@ -103,6 +105,7 @@ public class SSMThirdPersonCharacterInput : MonoBehaviour {
             }
             Primary = Input.GetButton("Fire1J2");
             Secondary = Input.GetButton("Fire2J2");
+            Interact = Input.GetButton("InteractJ2");
             //Primary = Input.GetKeyDown(KeyCode.Joystick2Button2);
             //Secondary = Input.GetKeyDown(KeyCode.Joystick2Button1);
         }
