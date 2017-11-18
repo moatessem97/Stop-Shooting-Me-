@@ -13,7 +13,7 @@ public class SSMThirdPersonCharacterInput : MonoBehaviour {
     private PickUpSc pickUpScript;
     private RocketPlayer rocketGunShootScript;
     private PickUpSc pickUpGunScript;
-    // water gun script here
+    private WaterGunScript myWaterGunScript;
     public GameObject CurrWeapon;
     [SerializeField]
     private float rateOfFire,FireTime;
@@ -63,6 +63,7 @@ public class SSMThirdPersonCharacterInput : MonoBehaviour {
             isPickUp = false;
             isWater = true;
             isMelee = false;
+            myWaterGunScript = CurrWeapon.GetComponentInChildren<WaterGunScript>();
         }
         // add mele weapon too
     }
@@ -118,7 +119,7 @@ public class SSMThirdPersonCharacterInput : MonoBehaviour {
             }
             if (isWater)
             {
-
+                myWaterGunScript.ShootWater();
             }
             if (isPickUp)
             {

@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Tut1.unity
+=======
+- path: Assets/Scenes/AITest 1.unity
+>>>>>>> origin/master
   isLoaded: 1
   isActive: 1
