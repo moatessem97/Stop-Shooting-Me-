@@ -62,7 +62,7 @@ public class ButtonToDoorPuzzleScript : MonoBehaviour
         }
         else if(occupied == false && doorOpened == true)
         {
-            if(buttonReset == 5)
+            if(buttonReset == 4)
             {
                 centralButton.SetTrigger("Released");
                 centralButton.SetBool("Lowered", false);
@@ -72,7 +72,7 @@ public class ButtonToDoorPuzzleScript : MonoBehaviour
             {
                 buttonReset++;
             }
-            if(waitPeriod == 10)
+            if(waitPeriod == 8)
             {
                 exitDoor.SetTrigger("Close");
                 doorOpened = false;
