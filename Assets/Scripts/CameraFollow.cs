@@ -29,7 +29,7 @@ public class CameraFollow : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		cameraDistance = 40.0f;
+		cameraDistance = 50.0f;
 		boundaries = 37.0f;
 	}
 
