@@ -6,6 +6,7 @@ public class PickUpSc : MonoBehaviour {
     [SerializeField]
     private GameObject myItem;
     private bool pickit;
+    public GameObject Holder;
     private void Update()
     {
         if (!myItem)
@@ -46,7 +47,7 @@ public class PickUpSc : MonoBehaviour {
             pickit = false;
             return;
         }
-        if(other.tag == "Pickup" || other.gameObject.tag == "Player")
+        if((other.tag == "Pickup" || other.gameObject.tag == "Player") && other.gameObject != Holder)
         {
             if(pickit)
             {
