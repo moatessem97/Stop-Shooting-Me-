@@ -6,29 +6,32 @@ public class WeaponSwitcher : MonoBehaviour {
 
 	public int WeaponSelected = 0;
     private SSMThirdPersonCharacterInput charInput;
-	// Use this for initialization
+    // Use this for initialization
+    private float timer, timeToChange;
 	void Start () {
         charInput = transform.GetComponentInParent<SSMThirdPersonCharacterInput>();
         WeaponSelect ();
+        timeToChange = 3f;
 	}
 	
 	// Update is called once per frame
-	void Update () {
-
+	void Update ()
+    {
 		int previousWeaponSelected = WeaponSelected;
         if (charInput.Keyboard || charInput.Controller2)
         {
-            if (Input.GetAxis("Mouse ScrollWheel") > 0f || Input.GetAxis("JoystickScroll2") > 0f)
+            if ((Input.GetAxis("Mouse ScrollWheel") > 0f || Input.GetAxis("JoystickScroll2") > 0f) && Time.time > timer)
             {
+                timer = Time.time + 1 / timeToChange;
                 if (WeaponSelected >= transform.childCount - 1)
                     WeaponSelected = 0;
-
                 else
                     WeaponSelected++;
             }
 
-            if (Input.GetAxis("Mouse ScrollWheel") < 0f || Input.GetAxis("JoystickScroll2") < 0f)
+            if ((Input.GetAxis("Mouse ScrollWheel") < 0f || Input.GetAxis("JoystickScroll2") < 0f) && Time.time > timer)
             {
+                timer = Time.time + 1 / timeToChange;
                 if (WeaponSelected <= 0)
                     WeaponSelected = transform.childCount - 1;
                 else
@@ -37,8 +40,9 @@ public class WeaponSwitcher : MonoBehaviour {
         }
         if(charInput.Controller1)
         {
-            if (Input.GetAxis("JoystickScroll") > 0f)
+            if (Input.GetAxis("JoystickScroll") > 0f && Time.time > timer)
             {
+                timer = Time.time + 1 / timeToChange;
                 if (WeaponSelected >= transform.childCount - 1)
                     WeaponSelected = 0;
 
@@ -46,8 +50,9 @@ public class WeaponSwitcher : MonoBehaviour {
                     WeaponSelected++;
             }
 
-            if (Input.GetAxis("JoystickScroll") < 0f)
+            if (Input.GetAxis("JoystickScroll") < 0f && Time.time > timer)
             {
+                timer = Time.time + 1 / timeToChange;
                 if (WeaponSelected <= 0)
                     WeaponSelected = transform.childCount - 1;
                 else
