@@ -51,8 +51,14 @@ public class RocketParticleSc : MonoBehaviour {
                 {
                     AIHit(hit, grenadeOrigin);
                 }
+                if(hit.tag == "Player")
+                {
+                    hit.GetComponent<CharacterHealth>().health -= 10;
+                }
+                //if we hit any rigidbodies then add force based off our power, the position of the explosion object
+                hit.GetComponent<Rigidbody>().AddExplosionForce(Power, grenadeOrigin, Radius, ExplosiveKick);
+                
 
-                hit.GetComponent<Rigidbody>().AddExplosionForce(Power, grenadeOrigin, Radius, ExplosiveKick); //if we hit any rigidbodies then add force based off our power, the position of the explosion object
             }
 
         createBOOM();
