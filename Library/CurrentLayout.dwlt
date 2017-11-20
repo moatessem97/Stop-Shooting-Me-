@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 521}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -43,7 +43,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 950, y: 521}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -107,10 +107,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 713, y: 471}
-  m_MaxSize: {x: 18008, y: 14021}
+  m_MinSize: {x: 713, y: 492}
+  m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 12615
+  controlID: 156
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 12616
+  controlID: 11
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -207,10 +207,10 @@ MonoBehaviour:
     y: 0
     width: 234
     height: 947
-  m_MinSize: {x: 234, y: 471}
-  m_MaxSize: {x: 10004, y: 14021}
+  m_MinSize: {x: 234, y: 492}
+  m_MaxSize: {x: 10004, y: 14042}
   vertical: 1
-  controlID: 12534
+  controlID: 69
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -229,8 +229,8 @@ MonoBehaviour:
     y: 0
     width: 234
     height: 389
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -390,14 +390,14 @@ MonoBehaviour:
     width: 1407
     height: 484
   m_SceneLighting: 1
-  lastFramingTime: 12027.304039469383
+  lastFramingTime: 3876.7207824557363
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 476.9247, y: -28.137474, z: 43.793167}
+    m_Target: {x: -347.13397, y: 6.1643353, z: -35.84713}
     speed: 2
-    m_Value: {x: 476.9247, y: -28.137474, z: 43.793167}
+    m_Value: {x: -347.13397, y: 6.1643353, z: -35.84713}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -420,13 +420,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.06103226, y: -0.67299086, z: 0.05588297, w: -0.7350071}
+    m_Target: {x: -0.06976632, y: 0.91385525, z: -0.1779776, w: -0.35822523}
     speed: 2
-    m_Value: {x: -0.06103226, y: -0.67299086, z: 0.05588297, w: -0.7350071}
+    m_Value: {x: -0.06976632, y: 0.91385525, z: -0.1779776, w: -0.35822523}
   m_Size:
-    m_Target: 235.82423
+    m_Target: 108.42466
     speed: 2
-    m_Value: 235.82423
+    m_Value: 108.42466
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -554,21 +554,21 @@ MonoBehaviour:
     width: 230
     height: 368
   m_TreeViewState:
-    scrollPos: {x: 0, y: 401}
-    m_SelectedIDs: 9e2b0200
-    m_LastClickedID: 142238
-    m_ExpandedIDs: 5463f7ff7865f7ff8065f7ff7a67f7ff9271f7ff68ebf7ff6ea2f8ff9aa2f8ff98a6f8ffcaa6f8ffecb8f8ffb4cbf8ff007afbff2c7afbff5c7efbff6abdfcffecd1fcff3aeafcffa2fdfcffbc9efdff689ffdff7e08feff4e37feff70aefeffb85affff0083ffff1cceffffbeedffff1afcffff00000000206c00003a710000d4a20000a0d5000084d8000052030100fea8010014ad010008af010086fd01004a180200481e02003c2c0200622c0200c42c0200
+    scrollPos: {x: 0, y: 120}
+    m_SelectedIDs: 1669feff
+    m_LastClickedID: -104170
+    m_ExpandedIDs: 064efeff3a4efeff2068feffc268feff1669feff2269feff1afcffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: GameObject
-      m_OriginalName: GameObject
+      m_Name: WaterShootEffect(Clone)
+      m_OriginalName: WaterShootEffect(Clone)
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 142284
+      m_UserData: -917542
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -618,33 +618,33 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Buttons and Doors/Doors & Buttons 1/Mk 1
+    - Assets/3D Models
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Buttons and Doors/Doors & Buttons 1/Mk 1
+  - Assets/3D Models
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\Stop-Shooting-Me-
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c83f0000
-    m_LastClickedID: 16328
-    m_ExpandedIDs: 000000001c2700007c27000010290000a4290000a8290000ac290000442a0000b82b0000c82b0000082d0000c42d0000ca2d0000582f00002a310000643100006a320000de320000ae340000d4350000e4350000e8350000ee360000fa3600002c370000ee380000303b0000643c00004a3d0000a83d0000da3e0000f03e0000d83f00006c40000094400000a4400000e04100003442000068420000ba420000c0420000284300002a430000c0430000b6490000b8490000ba490000bc490000be490000c0490000c2490000c4490000c6490000c8490000ca490000cc490000ce490000d0490000d2490000d4490000d6490000d8490000da490000dc490000de490000e0490000e2490000e4490000e6490000e8490000ea490000ec490000ee490000f0490000f2490000f4490000f6490000f8490000fa490000fc490000fe490000004a0000024a0000044a000000ca9a3bffffff7f
+    m_SelectedIDs: 1c2c0000
+    m_LastClickedID: 11292
+    m_ExpandedIDs: 000000001e270000482700007e27000012290000a6290000aa290000ae290000482b0000ba2b0000ca2b00000a2d0000c62d0000cc2d00005a2f00002c310000663100006c320000e0320000b0340000d6350000e6350000ea350000f0360000fc3600002e370000f0380000323b0000663c00004c3d0000aa3d0000dc3e0000f23e0000da3f00006e40000096400000a6400000e2410000364200006a420000bc420000c24200002a4300002c430000c2430000084b00000a4b00000c4b00000e4b0000104b0000124b0000144b0000164b0000184b00001a4b00001c4b00001e4b0000204b0000224b0000244b0000264b0000284b00002a4b00002c4b00002e4b0000304b0000324b0000344b0000364b0000384b00003a4b00003c4b00003e4b0000404b0000424b0000444b0000464b0000484b00004a4b00004c4b00004e4b0000504b0000524b0000544b0000564b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Planet Earth Free
+      m_OriginalName: Planet Earth Free
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 16366
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 11}
     m_SearchString: 
@@ -658,7 +658,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001c2700007c27000010290000a4290000a8290000ac290000b82b0000c82b0000082d0000c42d0000ca2d0000582f00002a310000643100006a320000de320000ae340000d4350000e4350000e8350000ee360000fa3600002c370000ee380000303b0000643c00004a3d0000a83d0000da3e0000f03e0000d83f00006c40000094400000a4400000e04100003442000068420000ba420000c0420000284300002a430000c0430000b6490000b8490000ba490000bc490000be490000c0490000c2490000c4490000c6490000c8490000ca490000cc490000ce490000d0490000d2490000d4490000d6490000d8490000da490000dc490000de490000e0490000e2490000e4490000e6490000e8490000ea490000ec490000ee490000f0490000f2490000f4490000f6490000f8490000fa490000fc490000fe490000004a0000024a0000044a000000ca9a3bffffff7f
+    m_ExpandedIDs: 000000001e2700007e27000012290000a6290000aa290000ae290000462a0000ba2b0000ca2b00000a2d0000c62d0000cc2d00005a2f00002c310000663100006c320000e0320000b0340000d6350000e6350000ea350000f0360000fc3600002e370000f0380000323b0000663c00004c3d0000aa3d0000dc3e0000f23e0000da3f00006e40000096400000a6400000e2410000364200006a420000bc420000c24200002a4300002c430000c2430000084b00000a4b00000c4b00000e4b0000104b0000124b0000144b0000164b0000184b00001a4b00001c4b00001e4b0000204b0000224b0000244b0000264b0000284b00002a4b00002c4b00002e4b0000304b0000324b0000344b0000364b0000384b00003a4b00003c4b00003e4b0000404b0000424b0000444b0000464b0000484b00004a4b00004c4b00004e4b0000504b0000524b0000544b0000564b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -685,22 +685,22 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000de3b0000648e0000ac4300008e560000bc5500009e45000040510000de5100009a9e0000d4560000482b0000f03b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: WaterGunScript
+      m_OriginalName: WaterGunScript
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 1832
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 11}
     m_CreateAssetUtility:

@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class WaterGunScript : MonoBehaviour {
 
-    public ParticleSystem Water;
-
+    public GameObject Water;
+    GameObject waater;
     public void ShootWater()
     {
-        Instantiate(Water, transform.position, transform.rotation);
+        waater = Instantiate(Water, transform.position, transform.rotation);
+        waater.transform.SetParent(gameObject.transform);
     }
 }
