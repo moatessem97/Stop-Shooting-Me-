@@ -31,6 +31,7 @@ public class WaterScript : MonoBehaviour {
             }
             if (other.tag == "Player")
             {
+                other.GetComponent<CharacterHealth>().health -= 0.5f;
                 //dmg player
             }
         }
