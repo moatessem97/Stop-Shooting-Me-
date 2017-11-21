@@ -117,7 +117,7 @@
     <Compile Include="Assets\Scripts\AudioTriggerScript.cs" />
     <Compile Include="Assets\Scripts\ButtonController.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
-    <Compile Include="Assets\Scripts\CameraFollowTutorial.cs" />
+    <Compile Include="Assets\Scripts\CameraFollowChase.cs" />
     <Compile Include="Assets\Scripts\CHangelevl.cs" />
     <Compile Include="Assets\Scripts\CharacterAbilities.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\CharacterHealth.cs" />
