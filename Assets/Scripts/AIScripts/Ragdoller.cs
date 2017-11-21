@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using RAIN.Core;
 
 public class Ragdoller : MonoBehaviour {
 
@@ -24,7 +23,6 @@ public class Ragdoller : MonoBehaviour {
             }
         } 
     }
-    private AIRig thisRig;
     enum RagdollState
     {
         animated,
@@ -78,7 +76,7 @@ public class Ragdoller : MonoBehaviour {
 
         anim = GetComponent<Animator>();
         //thisRig = GetComponentInChildren<AIRig>();
-        //thisRig.r
+        //thisRig.
     }
 
 }
