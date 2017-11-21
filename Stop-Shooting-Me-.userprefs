@@ -1,17 +1,18 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Fading.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CharacterScripts\SSMThirdPersonCharacterInput.cs">
     <Files>
       <File FileName="Assets\Scripts\CameraFollow.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CameraFollowTutorial.cs" Line="98" Column="1" />
+      <File FileName="Assets\Scripts\CameraFollowTutorial.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\WeaponSwitcher.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\ButtonController.cs" Line="1" Column="1" />
       <File FileName="Assets\Buttons and Doors\NewButton\BridgeTrigger.cs" Line="1" Column="1" />
       <File FileName="Assets\Buttons and Doors\NewButton\BridgeTriggerObjects.cs" Line="1" Column="1" />
       <File FileName="Assets\Scenes\M_Level Notes.txt" Line="1" Column="1" />
       <File FileName="Assets\Scripts\PickUpSc.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Fading.cs" Line="12" Column="2" />
+      <File FileName="Assets\Scripts\Fading.cs" Line="1" Column="1" />
       <File FileName="Assets\Buttons and Doors\NewButton\ButtonToDoorPuzzleScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CharacterScripts\SSMThirdPersonCharacterInput.cs" Line="36" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
