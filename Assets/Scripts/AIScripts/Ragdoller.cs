@@ -23,7 +23,6 @@ public class Ragdoller : MonoBehaviour {
             }
         } 
     }
-
     enum RagdollState
     {
         animated,
@@ -76,6 +75,8 @@ public class Ragdoller : MonoBehaviour {
         //}
 
         anim = GetComponent<Animator>();
+        //thisRig = GetComponentInChildren<AIRig>();
+        //thisRig.
     }
 
 }
