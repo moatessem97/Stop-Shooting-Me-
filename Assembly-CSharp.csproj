@@ -102,6 +102,7 @@
      <Compile Include="Assets\Scripts\RotatorIcon.cs" />
      <Compile Include="Assets\Scripts\RotatorMenu.cs" />
      <Compile Include="Assets\Scripts\SplashScreen.cs" />
+     <Compile Include="Assets\Scripts\TeleportTutorial.cs" />
      <Compile Include="Assets\Scripts\WeaponSwitcher.cs" />
      <Compile Include="Assets\Scripts\WeightBasketScript.cs" />
      <None Include="Assets\Extra Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
