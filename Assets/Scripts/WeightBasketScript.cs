@@ -2,13 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WeightBasketScript : MonoBehaviour {
+public class WeightBasketScript : MonoBehaviour
+{
 
     public float totalWeight;
     public Animator pRoomDoor;
-    public Animator tubeDoor;
-	
-	void OnTriggerEnter (Collider ball)
+    public GameObject tubeDoor;
+    bool roomComplete;
+
+    void Start()
+    {
+        roomComplete = false;
+    }
+
+    void OnTriggerEnter (Collider ball)
     {
         if(ball.gameObject.tag == "Pickup")
         {
@@ -19,9 +26,14 @@ public class WeightBasketScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-		if(totalWeight >= 120)
+        if (roomComplete == false)
         {
-            pRoomDoor.SetBool("RoomComplete", true);
+            if (totalWeight >= 120)
+            {
+                pRoomDoor.SetBool("RoomComplete", true);
+                tubeDoor.SetActive(false);
+                roomComplete = true;
+            }
         }
 	}
 }

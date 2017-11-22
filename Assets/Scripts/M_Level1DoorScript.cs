@@ -7,7 +7,7 @@ public class M_Level1DoorScript : MonoBehaviour {
     public Animator pRoomDoor;
     //public GameObject doorTrigger;
 
-    int playersInRoom;
+    public int playersInRoom;
     bool player1Entered;
     bool player2Entered;
 
@@ -34,11 +34,15 @@ public class M_Level1DoorScript : MonoBehaviour {
                 player2Entered = true;
                 playersInRoom++;
             }
-            else if( playersInRoom == 2)
-            {
-                pRoomDoor.SetTrigger("PlayersEntered");
-                this.gameObject.SetActive(false);
-            }
         }
 	}
+
+    void Update()
+    {
+        if (playersInRoom == 2)
+        {
+            pRoomDoor.SetTrigger("PlayersEntered");
+            this.gameObject.SetActive(false);
+        }
+    }
 }

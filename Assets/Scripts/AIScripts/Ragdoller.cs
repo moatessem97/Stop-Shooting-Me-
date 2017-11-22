@@ -29,7 +29,7 @@ public class Ragdoller : MonoBehaviour {
         ragdolled,
         //blendToAnim  
     }
-
+    Rigidbody rb;
     RagdollState state = RagdollState.animated;
 
     //public float ragdollToMecanimBlendTime = 0.5f;
@@ -63,7 +63,7 @@ public class Ragdoller : MonoBehaviour {
     }
     void Start () {
         setKinematic(true);
-
+        rb = gameObject.GetComponent<Rigidbody>();
         Component[] components = GetComponentsInChildren(typeof(Transform));
 
         //For each of the transforms, create a BodyPart instance and store the transform 
@@ -75,8 +75,6 @@ public class Ragdoller : MonoBehaviour {
         //}
 
         anim = GetComponent<Animator>();
-        //thisRig = GetComponentInChildren<AIRig>();
-        //thisRig.
     }
 
 }
