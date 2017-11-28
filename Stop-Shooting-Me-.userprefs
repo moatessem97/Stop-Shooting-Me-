@@ -1,6 +1,6 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\TeleportTutorial.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Chase.cs">
     <Files>
       <File FileName="Assets\Scripts\CameraFollow.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\WeaponSwitcher.cs" Line="1" Column="1" />
@@ -9,11 +9,12 @@
       <File FileName="Assets\Buttons and Doors\NewButton\BridgeTriggerObjects.cs" Line="1" Column="1" />
       <File FileName="Assets\Scenes\M_Level Notes.txt" Line="1" Column="1" />
       <File FileName="Assets\Scripts\PickUpSc.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Fading.cs" Line="17" Column="3" />
+      <File FileName="Assets\Scripts\Fading.cs" Line="1" Column="1" />
       <File FileName="Assets\Buttons and Doors\NewButton\ButtonToDoorPuzzleScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\CharacterScripts\SSMThirdPersonCharacterInput.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\CameraFollowChase.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\TeleportTutorial.cs" Line="10" Column="29" />
+      <File FileName="Assets\Scripts\TeleportTutorial.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Chase.cs" Line="13" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
