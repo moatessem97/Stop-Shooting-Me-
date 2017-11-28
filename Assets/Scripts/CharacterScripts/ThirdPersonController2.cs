@@ -133,8 +133,8 @@ public class ThirdPersonController2 : MonoBehaviour {
             //rb.AddForce(airMove*100f);
             //rb.velocity = new Vector3(rb.velocity.x + airMove.x, rb.velocity.y, rb.velocity.z + airMove.z);
             
-            rb.AddForce(airMove * 34f);
-            Vector3.ClampMagnitude(rb.velocity, 50f);
+            rb.AddForce(airMove * 33f);
+            Vector3.ClampMagnitude(rb.velocity, 30f);
             rb.AddForce(EGF);
         }
     }

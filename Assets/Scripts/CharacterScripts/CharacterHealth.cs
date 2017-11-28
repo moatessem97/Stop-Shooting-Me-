@@ -33,6 +33,10 @@ public class CharacterHealth : MonoBehaviour {
         if(health <= 0)
         {
             Debug.Log("dead" + gameObject.name);
+            if(gameObject.tag == "Player")
+            {
+                GetComponent<SSMThirdPersonCharacterInput>().isDead = true;
+            }
         }
 	}
 }
