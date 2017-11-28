@@ -17,6 +17,7 @@ public class SSMThirdPersonCharacterInput : MonoBehaviour {
     public GameObject CurrWeapon;
     [SerializeField]
     private float rateOfFire,FireTime;
+    public bool isDead;
 
     // weapon number is based on each weapon 
     private void Start () {
@@ -68,6 +69,10 @@ public class SSMThirdPersonCharacterInput : MonoBehaviour {
         // add mele weapon too
     }
 	private void Update () {
+        if (isDead)
+        {
+            return;
+        }
         buttonInputs();
        
 	}
@@ -149,6 +154,10 @@ public class SSMThirdPersonCharacterInput : MonoBehaviour {
     }
     private void FixedUpdate()
     {
+        if (isDead)
+        {
+            return;
+        }
         myMovement();
     }
 
