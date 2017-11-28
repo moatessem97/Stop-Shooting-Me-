@@ -7,6 +7,7 @@ public class PickUpSc : MonoBehaviour {
     private GameObject myItem;
     private bool pickit;
     public GameObject Holder;
+
     private void Update()
     {
         if (!myItem)
