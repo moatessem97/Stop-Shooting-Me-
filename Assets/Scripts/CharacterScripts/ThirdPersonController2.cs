@@ -9,7 +9,7 @@ public class ThirdPersonController2 : MonoBehaviour {
     private float gravityMult = 2.5f, turning, forward;
     Rigidbody rb;
     Animator anim;
-    bool grounded;
+    public bool grounded;
     Vector3 normal,AirMove;
     //GameObject groundCheckObj;
     //BoxCollider groundCheckObjCollider;

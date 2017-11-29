@@ -112,6 +112,7 @@
     <Compile Include="Assets\Extra Assets\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
     <Compile Include="Assets\Extra Assets\EffectExamples\Shared\Scripts\GunAim.cs" />
     <Compile Include="Assets\Extra Assets\EffectExamples\Shared\Scripts\GunShoot.cs" />
+    <Compile Include="Assets\Scripts\AIScripts\Boss.cs" />
     <Compile Include="Assets\Scripts\AIScripts\Ragdoller.cs" />
     <Compile Include="Assets\Scripts\AIScripts\WeakAIScript.cs" />
     <Compile Include="Assets\Scripts\AudioTriggerScript.cs" />
@@ -126,6 +127,7 @@
     <Compile Include="Assets\Scripts\CharacterScripts\SSMThirdPersonCharacter.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\SSMThirdPersonCharacterInput.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\ThirdPersonController2.cs" />
+    <Compile Include="Assets\Scripts\Chase.cs" />
     <Compile Include="Assets\Scripts\ConsoleTrigger.cs" />
     <Compile Include="Assets\Scripts\CreditSceneExit.cs" />
     <Compile Include="Assets\Scripts\DoorButton.cs" />
