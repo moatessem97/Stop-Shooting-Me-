@@ -32,17 +32,7 @@ public class Boss : MonoBehaviour {
     private void setState(States state)
     {
         agentState = state;
-        switch (state)
-        {
-            case States.Idle:
-                break;
-            case States.Bite:
-                break;
-            case States.Jump:
-                break;
-            case States.TailAttack:
-                break;
-        }
+       
     }
     private void bossSwitch()
     {
