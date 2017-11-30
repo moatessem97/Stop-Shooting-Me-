@@ -58,10 +58,10 @@ public class ThirdPersonController2 : MonoBehaviour {
         anim.SetFloat("Forward", forward, 0.1f, Time.deltaTime);
         anim.SetFloat("Turn", turning, 0.1f, Time.deltaTime);
         anim.SetBool("OnGround", grounded);
-        if (!grounded)
-        {
-            //jump
-        }
+        //if (!grounded)
+        //{
+        //    //jump
+        //}
         // leg calculation based on run cycle
         float runCycle = Mathf.Repeat(anim.GetCurrentAnimatorStateInfo(0).normalizedTime , 1);
         float jumpLeg = (runCycle < 0.5f ? 1 : -1) * forward;
