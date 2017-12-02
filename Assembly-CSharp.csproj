@@ -69,10 +69,6 @@
      <Compile Include="Assets\Buttons and Doors\NewButton\RobotTrigger.cs" />
      <Compile Include="Assets\Buttons and Doors\PickUp1.cs" />
      <Compile Include="Assets\Buttons and Doors\Pickupable.cs" />
-     <Compile Include="Assets\Extra Assets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
-     <Compile Include="Assets\Extra Assets\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
-     <Compile Include="Assets\Extra Assets\EffectExamples\Shared\Scripts\GunAim.cs" />
-     <Compile Include="Assets\Extra Assets\EffectExamples\Shared\Scripts\GunShoot.cs" />
      <Compile Include="Assets\Scripts\AIScripts\Boss.cs" />
      <Compile Include="Assets\Scripts\AIScripts\Ragdoller.cs" />
      <Compile Include="Assets\Scripts\AIScripts\WeakAIScript.cs" />
@@ -89,6 +85,8 @@
      <Compile Include="Assets\Scripts\CharacterScripts\SSMThirdPersonCharacterInput.cs" />
      <Compile Include="Assets\Scripts\CharacterScripts\ThirdPersonController2.cs" />
      <Compile Include="Assets\Scripts\Chase.cs" />
+     <Compile Include="Assets\Scripts\ChaseSceneBossTrigger.cs" />
+     <Compile Include="Assets\Scripts\ChaseSceneTrigger.cs" />
      <Compile Include="Assets\Scripts\ConsoleTrigger.cs" />
      <Compile Include="Assets\Scripts\CreditSceneExit.cs" />
      <Compile Include="Assets\Scripts\DoorButton.cs" />
