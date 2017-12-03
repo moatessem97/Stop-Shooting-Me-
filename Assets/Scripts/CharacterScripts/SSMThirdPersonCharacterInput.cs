@@ -18,12 +18,35 @@ public class SSMThirdPersonCharacterInput : MonoBehaviour {
     [SerializeField]
     private float rateOfFire,FireTime;
     public bool isDead;
+    // 0 for mele 1 for rocket 2 for water 3 for gravity
+    private GameObject[] weaponImages;
 
-    // weapon number is based on each weapon 
+    private void Awake()
+    {
+        weaponImages = new GameObject[4];
+        if (gameObject.name == "Player 1")
+        {
+            weaponImages[0] = GameObject.Find("LightsaberImage1");
+            weaponImages[1] = GameObject.Find("RocketImage1");
+            weaponImages[2] = GameObject.Find("HoseImage1");
+            weaponImages[3] = GameObject.Find("GravityImage1");
+        }
+        else if (gameObject.name == "Player 2")
+        {
+            weaponImages[0] = GameObject.Find("LightsaberImage");
+            weaponImages[1] = GameObject.Find("RocketImage");
+            weaponImages[2] = GameObject.Find("HoseImage");
+            weaponImages[3] = GameObject.Find("GravityImage");
+        }
+        foreach(GameObject img in weaponImages)
+        {
+            img.SetActive(false);
+        }
+    }
     private void Start () {
         cam = Camera.main.transform;
         character = GetComponent<ThirdPersonController2>();
-        if(gameObject.name == "Player 1")
+        if (gameObject.name == "Player 1")
         {
             player1 = true;
             Keyboard = true;
@@ -33,12 +56,17 @@ public class SSMThirdPersonCharacterInput : MonoBehaviour {
             player1 = false;
             Controller1 = true;
         }
+        
 	}
 	public void weaponInput()
     {
         if(CurrWeapon.name == "Rocket")
         {
             Debug.Log("RocketGun");
+            weaponImages[2].SetActive(true);
+            weaponImages[1].SetActive(false);
+            weaponImages[0].SetActive(false);
+            weaponImages[3].SetActive(false);
             rateOfFire = 1f;
             isRocket = true;
             isPickUp = false;
@@ -49,6 +77,10 @@ public class SSMThirdPersonCharacterInput : MonoBehaviour {
         else if (CurrWeapon.name == "Pistol27")
         {
             Debug.Log("pick up gun");
+            weaponImages[3].SetActive(true);
+            weaponImages[1].SetActive(false);
+            weaponImages[2].SetActive(false);
+            weaponImages[0].SetActive(false);
             rateOfFire = 2f;
             isRocket = false;
             isPickUp = true;
@@ -59,12 +91,29 @@ public class SSMThirdPersonCharacterInput : MonoBehaviour {
         else if (CurrWeapon.name == "Sniper")
         {
             Debug.Log("Water Hose");
+            weaponImages[2].SetActive(true);
+            weaponImages[1].SetActive(false);
+            weaponImages[0].SetActive(false);
+            weaponImages[3].SetActive(false);
             rateOfFire = 7f;
             isRocket = false;
             isPickUp = false;
             isWater = true;
             isMelee = false;
             myWaterGunScript = CurrWeapon.GetComponentInChildren<WaterGunScript>();
+        }
+        else if(CurrWeapon.name == "lightsaber")
+        {
+            Debug.Log("Lazer Sword");
+            weaponImages[0].SetActive(true);
+            weaponImages[1].SetActive(false);
+            weaponImages[2].SetActive(false);
+            weaponImages[3].SetActive(false);
+            rateOfFire = 5f;
+            isRocket = false;
+            isPickUp = false;
+            isWater = false;
+            isMelee = true;
         }
         // add mele weapon too
     }
