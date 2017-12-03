@@ -20,7 +20,7 @@ public class SSMThirdPersonCharacterInput : MonoBehaviour {
     public bool isDead;
     // 0 for mele 1 for rocket 2 for water 3 for gravity
     private GameObject[] weaponImages;
-
+    private Animator anim;
     private void Awake()
     {
         weaponImages = new GameObject[4];
@@ -46,6 +46,7 @@ public class SSMThirdPersonCharacterInput : MonoBehaviour {
     private void Start () {
         cam = Camera.main.transform;
         character = GetComponent<ThirdPersonController2>();
+        anim = gameObject.GetComponent<Animator>();
         if (gameObject.name == "Player 1")
         {
             player1 = true;
@@ -56,8 +57,8 @@ public class SSMThirdPersonCharacterInput : MonoBehaviour {
             player1 = false;
             Controller1 = true;
         }
-        
-	}
+
+    }
 	public void weaponInput()
     {
         if(CurrWeapon.name == "Rocket")
@@ -165,37 +166,39 @@ public class SSMThirdPersonCharacterInput : MonoBehaviour {
         }
         if (Primary && Time.time > FireTime)
         {
-            FireTime = Time.time + 1 / rateOfFire;
             if (isRocket)
             {
+                FireTime = Time.time + 1 / rateOfFire;
                 rocketGunShootScript.ShootRocket();
             }
             if (isMelee)
             {
-
+                FireTime = Time.time + 1 / rateOfFire;
             }
             if (isWater)
             {
+                FireTime = Time.time + 1 / rateOfFire;
                 myWaterGunScript.ShootWater();
             }
             if (isPickUp)
             {
+                FireTime = Time.time + 1 / rateOfFire;
                 pickUpGunScript.Throw(Primary);
             }
         }
         if (Secondary && Time.time > FireTime)
         {
-            FireTime = Time.time + 1 / rateOfFire;
             if (isMelee)
             {
-
+                FireTime = Time.time + 1 / rateOfFire;
             }
             if (isWater)
             {
-
+                FireTime = Time.time + 1 / rateOfFire;
             }
             if (isPickUp)
             {
+                FireTime = Time.time + 1 / rateOfFire;
                 pickUpGunScript.pickUPFunction(Secondary);
             }
         }

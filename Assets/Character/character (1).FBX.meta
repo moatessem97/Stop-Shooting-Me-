@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 055524c13f1f08e4fb6b4967ec1c4d27
-timeCreated: 1510753540
-licenseType: Free
+timeCreated: 1512321727
+licenseType: Pro
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
@@ -311,11 +311,11 @@ ModelImporter:
     - boneName: Base HumanRArmForearm
       humanName: RightLowerArm
       limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
+        min: {x: -77.14286, y: 0, z: 0}
+        max: {x: 89.99999, y: 0, z: 0}
         value: {x: 0, y: 0, z: 0}
         length: 0
-        modified: 0
+        modified: 1
     - boneName: Base HumanLPalm
       humanName: LeftHand
       limit:
@@ -327,11 +327,11 @@ ModelImporter:
     - boneName: Base HumanRArmPalm
       humanName: RightHand
       limit:
-        min: {x: 0, y: 0, z: 0}
-        max: {x: 0, y: 0, z: 0}
+        min: {x: 0, y: -180, z: 0}
+        max: {x: 0, y: 40, z: 0}
         value: {x: 0, y: 0, z: 0}
         length: 0
-        modified: 0
+        modified: 1
     - boneName: Base HumanFootBone001
       humanName: LeftToes
       limit:

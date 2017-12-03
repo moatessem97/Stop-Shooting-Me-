@@ -108,6 +108,7 @@
     <Compile Include="Assets\Buttons and Doors\NewButton\RobotTrigger.cs" />
     <Compile Include="Assets\Buttons and Doors\PickUp1.cs" />
     <Compile Include="Assets\Buttons and Doors\Pickupable.cs" />
+    <Compile Include="Assets\MeleWeaponScript.cs" />
     <Compile Include="Assets\Scripts\AIScripts\Boss.cs" />
     <Compile Include="Assets\Scripts\AIScripts\Ragdoller.cs" />
     <Compile Include="Assets\Scripts\AIScripts\WeakAIScript.cs" />
