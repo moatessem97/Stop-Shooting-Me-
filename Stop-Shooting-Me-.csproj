@@ -153,6 +153,7 @@
     <Compile Include="Assets\Scripts\SwarmTrigger.cs" />
     <Compile Include="Assets\Scripts\TargetButton.cs" />
     <Compile Include="Assets\Scripts\TeleportTutorial.cs" />
+    <Compile Include="Assets\Scripts\TrollScript.cs" />
     <Compile Include="Assets\Scripts\WeaponSwitcher.cs" />
     <Compile Include="Assets\Scripts\WeightBasketScript.cs" />
   </ItemGroup>
