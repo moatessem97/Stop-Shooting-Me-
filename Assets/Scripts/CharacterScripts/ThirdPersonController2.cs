@@ -9,13 +9,19 @@ public class ThirdPersonController2 : MonoBehaviour {
     private float gravityMult = 2.5f, turning, forward;
     Rigidbody rb;
     Animator anim;
-    public bool grounded;
+    public bool grounded, bossAtt, bossAtt2;
     Vector3 normal,AirMove;
+    private Transform boss;
     //GameObject groundCheckObj;
     //BoxCollider groundCheckObjCollider;
 	void Start () {
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
+        // get boss if he's there
+        if (GameObject.Find("WhaleBossFinal"))
+        {
+            boss = GameObject.Find("WhaleBossFinal").transform;
+        }
         // the 7th child HAS to be the groundchecker
         //groundCheckObj = gameObject.transform.GetChild(6).gameObject;
         //groundCheckObjCollider = groundCheckObj.GetComponent<BoxCollider>();     
@@ -136,6 +142,23 @@ public class ThirdPersonController2 : MonoBehaviour {
             rb.AddForce(airMove * 33f);
             Vector3.ClampMagnitude(rb.velocity, 30f);
             rb.AddForce(EGF);
+        }
+        // for boss bite
+        if (bossAtt)
+        {
+            Vector3 desired = gameObject.transform.position - boss.position;
+            rb.velocity = new Vector3(desired.x *1.3f , 30f, desired.z* 1.3f );
+            grounded = false;
+            anim.applyRootMotion = false;
+            bossAtt = false;
+        }
+        // for boss jump
+        if (bossAtt2)
+        {
+            rb.velocity = new Vector3(rb.velocity.x,40f, rb.velocity.z);
+            grounded = false;
+            anim.applyRootMotion = false;
+            bossAtt2 = false;
         }
     }
 

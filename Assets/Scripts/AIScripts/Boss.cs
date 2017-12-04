@@ -14,13 +14,15 @@ public class Boss : MonoBehaviour {
     private Animator anim;
     private GameObject[] players;
     private States agentState;
-    public float JumpDmg, BiteDmg, TailDmg,Rate, Health, BiteThrowForce;
+    public float JumpDmg, BiteDmg, TailDmg, Rate, Health;
     private bool player1, player2;
     private float timer;
+    public int pattern;
     private GameObject target;
 	void Start () {
         anim = gameObject.GetComponent<Animator>();
         players = GameObject.FindGameObjectsWithTag("Player");
+        pattern = 0;
         setState(States.Idle);
 	}
 	
@@ -85,48 +87,85 @@ public class Boss : MonoBehaviour {
             if (player.GetComponent<ThirdPersonController2>().grounded)
             {
                 player.GetComponent<CharacterHealth>().health -= JumpDmg;
+                player.GetComponentInChildren<GroundedColliderCheck>().CheckStop = true;
+                player.GetComponent<ThirdPersonController2>().bossAtt2 = true;
             }
         }
     }
     public void biteEffect()
     {
-        Vector3 direction = Vector3.Normalize(target.transform.position - transform.position);
-        target.GetComponent<Rigidbody>().AddForce(Vector3.up * 3000f);
-        target.GetComponent<ThirdPersonController2>().grounded = false;
-        target.GetComponent<Rigidbody>().AddForce((direction * BiteThrowForce) + Vector3.up* 30f);
+        //Vector3 direction = Vector3.Normalize(target.transform.position - transform.position);
+        //target.GetComponent<Rigidbody>().AddForce(Vector3.up * 3000f);
+        //target.GetComponent<ThirdPersonController2>().grounded = false;
+        //target.GetComponent<Rigidbody>().AddForce((direction * BiteThrowForce) + Vector3.up* 30f);
+        target.GetComponentInChildren<GroundedColliderCheck>().CheckStop = true;
+        target.GetComponent<ThirdPersonController2>().bossAtt = true;
         target = null;
-        Debug.Log("hallo");
     }
     private void bossDecision()
     {
         if (Time.time > timer)
         {
+            Debug.Log("Decide");
             if (player1)
             {
-                transform.LookAt(GameObject.Find("Player 1").transform.position);
+                //transform.LookAt(GameObject.Find("Player 1").transform.position);
                 setState(States.Bite);
                 target = GameObject.Find("Player 1");
                 player1 = false;
+                return;
             }
             if (player2)
             {
-                transform.LookAt(GameObject.Find("Player 2").transform.position);
+                //transform.LookAt(GameObject.Find("Player 2").transform.position);
                 setState(States.Bite);
-                target = GameObject.Find("Player 1");
+                target = GameObject.Find("Player 2");
                 player2 = false;
+                return;
+            }
+            //tail
+            if(pattern == 0)
+            {
+                pattern++;
+                setState(States.TailAttack);
+                return;
+            }
+            //tail
+            if (pattern == 1)
+            {
+                pattern++;
+                setState(States.TailAttack);
+                return;
+            }
+            //jump
+            if (pattern == 2)
+            {
+                pattern = 0;
+                setState(States.Jump);
+                return;
             }
         }
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if(other.name == "Player 1")
         {
+            Vector3 dir = other.transform.position - transform.position;
+            Vector3 newDir = Vector3.RotateTowards(transform.forward, dir, Time.deltaTime*2f,0.0f);
+            Debug.DrawRay(transform.position, newDir, Color.red);
+            transform.rotation = Quaternion.LookRotation(newDir);
             player1 = true;
+            return;
         }
         if(other.name == "Player 2")
         {
+            Vector3 dir = other.transform.position - transform.position;
+            Vector3 newDir = Vector3.RotateTowards(transform.forward, dir, Time.deltaTime*2f, 0.0f);
+            Debug.DrawRay(transform.position, newDir, Color.red);
+            transform.rotation = Quaternion.LookRotation(newDir);
             player2 = true;
         }
+        
     }
     private void OnTriggerExit(Collider other)
     {
