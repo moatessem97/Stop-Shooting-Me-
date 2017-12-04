@@ -14,20 +14,28 @@ public class Boss : MonoBehaviour {
     private Animator anim;
     private GameObject[] players;
     private States agentState;
-    public float JumpDmg, BiteDmg, TailDmg, Rate, Health;
-    private bool player1, player2;
+    public float JumpDmg, BiteDmg, TailDmg, Rate, Health,Radius;
+    private bool player1, player2, Initialization;
     private float timer;
     public int pattern;
     private GameObject target;
+    private CameraQuake cq;
 	void Start () {
         anim = gameObject.GetComponent<Animator>();
+        cq = GameObject.FindObjectOfType<CameraQuake>();
         players = GameObject.FindGameObjectsWithTag("Player");
         pattern = 0;
         setState(States.Idle);
+        Initialization = true;
+        Invoke("initialize", 2f);
 	}
 	
-	void FixedUpdate ()
+	void Update ()
     {
+        if (Initialization)
+        {
+            return;
+        }
         bossSwitch();
 	}
 
@@ -53,6 +61,10 @@ public class Boss : MonoBehaviour {
             case States.Jump:
                 {
                     anim.SetBool("Jump", true);
+                    if (GameObject.FindObjectOfType<ColorFadeChange>())
+                    {
+                        GameObject.FindObjectOfType<ColorFadeChange>().Yo = true;
+                    }  
                 }
                 break;
             case States.TailAttack:
@@ -67,6 +79,10 @@ public class Boss : MonoBehaviour {
         timer = Time.time + 1 / Rate;
         setState(States.Idle);
         anim.SetBool("Jump", false);
+        if (GameObject.FindObjectOfType<ColorFadeChange>())
+        {
+            GameObject.FindObjectOfType<ColorFadeChange>().stop();
+        }
     }
     public void bossTailReset()
     {
@@ -82,6 +98,7 @@ public class Boss : MonoBehaviour {
     }
     public void bossJumpDamage()
     {
+        cq.Shake = true;
         foreach(GameObject player in players)
         {
             if (player.GetComponent<ThirdPersonController2>().grounded)
@@ -151,8 +168,8 @@ public class Boss : MonoBehaviour {
         if(other.name == "Player 1")
         {
             Vector3 dir = other.transform.position - transform.position;
+            dir = new Vector3(dir.x, 0, dir.z);
             Vector3 newDir = Vector3.RotateTowards(transform.forward, dir, Time.deltaTime*2f,0.0f);
-            Debug.DrawRay(transform.position, newDir, Color.red);
             transform.rotation = Quaternion.LookRotation(newDir);
             player1 = true;
             return;
@@ -160,8 +177,8 @@ public class Boss : MonoBehaviour {
         if(other.name == "Player 2")
         {
             Vector3 dir = other.transform.position - transform.position;
+            dir = new Vector3(dir.x, 0, dir.z);
             Vector3 newDir = Vector3.RotateTowards(transform.forward, dir, Time.deltaTime*2f, 0.0f);
-            Debug.DrawRay(transform.position, newDir, Color.red);
             transform.rotation = Quaternion.LookRotation(newDir);
             player2 = true;
         }
@@ -178,5 +195,8 @@ public class Boss : MonoBehaviour {
             player2 = false;
         }
     }
-
+    private void initialize()
+    {
+        Initialization = false;
+    }
 }

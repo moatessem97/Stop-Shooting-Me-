@@ -64,8 +64,8 @@ public class SSMThirdPersonCharacterInput : MonoBehaviour {
         if(CurrWeapon.name == "Rocket")
         {
             Debug.Log("RocketGun");
-            weaponImages[2].SetActive(true);
-            weaponImages[1].SetActive(false);
+            weaponImages[2].SetActive(false);
+            weaponImages[1].SetActive(true);
             weaponImages[0].SetActive(false);
             weaponImages[3].SetActive(false);
             rateOfFire = 1f;

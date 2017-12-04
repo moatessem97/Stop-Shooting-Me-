@@ -21,7 +21,7 @@ public class GroundedColliderCheck : MonoBehaviour {
             pc.groundChecker(grounded);
             return;
         }
-            Invoke("TurnBoolTrue", 0.8f);
+            Invoke("TurnBoolTrue", 0.5f);
     }
     private void OnTriggerExit(Collider other)
     {

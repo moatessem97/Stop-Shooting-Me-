@@ -1,4 +1,4 @@
-﻿    using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -147,7 +147,8 @@ public class ThirdPersonController2 : MonoBehaviour {
         if (bossAtt)
         {
             Vector3 desired = gameObject.transform.position - boss.position;
-            rb.velocity = new Vector3(desired.x *1.3f , 30f, desired.z* 1.3f );
+            desired.Normalize();
+            rb.velocity = new Vector3(desired.x *35f , 30f, desired.z* 35f);
             grounded = false;
             anim.applyRootMotion = false;
             bossAtt = false;
