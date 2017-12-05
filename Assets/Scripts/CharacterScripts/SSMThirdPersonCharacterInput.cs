@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 //[RequireComponent(typeof(SSMThirdPersonCharacter))]
 public class SSMThirdPersonCharacterInput : MonoBehaviour {
     private ThirdPersonController2 character;
@@ -38,10 +38,14 @@ public class SSMThirdPersonCharacterInput : MonoBehaviour {
             weaponImages[2] = GameObject.Find("HoseImage");
             weaponImages[3] = GameObject.Find("GravityImage");
         }
-        foreach(GameObject img in weaponImages)
+       
+        if (SceneManager.GetActiveScene().name != "Tut4")
         {
-            img.SetActive(false);
-        }
+            foreach (GameObject img in weaponImages)
+            {
+                img.SetActive(false);
+            }
+        }    
     }
     private void Start () {
         cam = Camera.main.transform;

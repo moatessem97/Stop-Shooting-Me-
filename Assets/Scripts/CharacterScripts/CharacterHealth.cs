@@ -5,11 +5,16 @@ using UnityEngine.UI;
 
 public class CharacterHealth : MonoBehaviour {
 
+    private Animator anim;
     private Image healthBar;
     public float health;
     public float maxHealth;
 	void Start ()
     {
+        if (GetComponent<Animator>())
+        {
+            anim = gameObject.GetComponent<Animator>();
+        }
     		if(gameObject.name == "Player 1")
         {
             healthBar = GameObject.Find("Healthbar1").GetComponent<Image>();
@@ -36,6 +41,10 @@ public class CharacterHealth : MonoBehaviour {
             if(gameObject.tag == "Player")
             {
                 GetComponent<SSMThirdPersonCharacterInput>().isDead = true;
+                GetComponentInChildren<WeaponSwitcher>().enabled = false;
+                GetComponentInChildren<MeleWeaponScript>().enabled = false;
+                anim.SetBool("isDead", true);
+                anim.SetLayerWeight(1, 0);
             }
         }
 	}
