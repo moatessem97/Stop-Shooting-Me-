@@ -69,6 +69,8 @@
      <Compile Include="Assets\Buttons and Doors\NewButton\RobotTrigger.cs" />
      <Compile Include="Assets\Buttons and Doors\PickUp1.cs" />
      <Compile Include="Assets\Buttons and Doors\Pickupable.cs" />
+     <Compile Include="Assets\ColorFadeChange.cs" />
+     <Compile Include="Assets\MeleWeaponScript.cs" />
      <Compile Include="Assets\Scripts\AIScripts\Boss.cs" />
      <Compile Include="Assets\Scripts\AIScripts\Ragdoller.cs" />
      <Compile Include="Assets\Scripts\AIScripts\WeakAIScript.cs" />
@@ -77,10 +79,12 @@
      <Compile Include="Assets\Scripts\ButtonController.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\CameraFollowChase.cs" />
+     <Compile Include="Assets\Scripts\CameraQuake.cs" />
      <Compile Include="Assets\Scripts\CHangelevl.cs" />
      <Compile Include="Assets\Scripts\CharacterAbilities.cs" />
      <Compile Include="Assets\Scripts\CharacterScripts\CharacterHealth.cs" />
      <Compile Include="Assets\Scripts\CharacterScripts\GroundedColliderCheck.cs" />
+     <Compile Include="Assets\Scripts\CharacterScripts\PlayerRagdoller.cs" />
      <Compile Include="Assets\Scripts\CharacterScripts\SSMThirdPersonCharacter.cs" />
      <Compile Include="Assets\Scripts\CharacterScripts\SSMThirdPersonCharacterInput.cs" />
      <Compile Include="Assets\Scripts\CharacterScripts\ThirdPersonController2.cs" />
@@ -114,6 +118,7 @@
      <Compile Include="Assets\Scripts\SwarmTrigger.cs" />
      <Compile Include="Assets\Scripts\TargetButton.cs" />
      <Compile Include="Assets\Scripts\TeleportTutorial.cs" />
+     <Compile Include="Assets\Scripts\TrollScript.cs" />
      <Compile Include="Assets\Scripts\WeaponSwitcher.cs" />
      <Compile Include="Assets\Scripts\WeightBasketScript.cs" />
      <None Include="Assets\Extra Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
