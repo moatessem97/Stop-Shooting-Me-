@@ -12,6 +12,7 @@ enum States
 
 public class Boss : MonoBehaviour {
     private Animator anim;
+    private GameObject parti;
     private GameObject[] players;
     private States agentState;
     public float JumpDmg, BiteDmg, TailDmg, Rate, Health,Radius;
@@ -20,6 +21,7 @@ public class Boss : MonoBehaviour {
     public int pattern;
     private GameObject target;
     private CameraQuake cq;
+    public GameObject sphere;
 	void Start () {
         anim = gameObject.GetComponent<Animator>();
         cq = GameObject.FindObjectOfType<CameraQuake>();
@@ -28,6 +30,7 @@ public class Boss : MonoBehaviour {
         setState(States.Idle);
         Initialization = true;
         Invoke("initialize", 2f);
+        parti = transform.GetChild(4).gameObject;
 	}
 	
 	void Update ()
@@ -108,6 +111,7 @@ public class Boss : MonoBehaviour {
                 player.GetComponent<ThirdPersonController2>().bossAtt2 = true;
             }
         }
+        instantiateBall();
     }
     public void biteEffect()
     {
@@ -198,5 +202,19 @@ public class Boss : MonoBehaviour {
     private void initialize()
     {
         Initialization = false;
+    }
+    public void bossTailParticle()
+    {
+        //parti.transform.Rotate(0f,Random.Range(-90f,90f), 0f);
+        parti.GetComponent<ParticleSystem>().Play();
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.blue;
+        Gizmos.DrawCube(gameObject.transform.position + new Vector3 (0f,200f,-200f), new Vector3(40f, 40f, 40f));
+    }
+    private void instantiateBall()
+    {
+        Instantiate(sphere, (gameObject.transform.position + new Vector3(0, 200f, -200f)), transform.rotation);
     }
 }
