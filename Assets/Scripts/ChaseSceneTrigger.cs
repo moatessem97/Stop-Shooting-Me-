@@ -10,7 +10,7 @@ public class ChaseSceneTrigger : MonoBehaviour {
 	// Update is called once per frame
     public void final()
     {
-        Debug.Log("Moatassem is not hetrosexual");
+        Debug.Log("Sasan is a Potato");
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -23,6 +23,7 @@ public class ChaseSceneTrigger : MonoBehaviour {
                 game.GetComponent<Rigidbody>().AddForce(Vector3.up * -40f);
             }
             Invoke("final", 3f);
+			Application.LoadLevel(Application.loadedLevel + 1);
         }
     }
 }
