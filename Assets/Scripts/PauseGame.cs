@@ -1,13 +1,10 @@
 using UnityEngine;
 using System.Collections;
-using UnityStandardAssets.Characters.FirstPerson;
+
 
 public class PauseGame : MonoBehaviour {
+	
     public Transform canvas;
- 
-
-
-
 	
 	// Update is called once per frame
 	void Update () {
@@ -22,13 +19,13 @@ public class PauseGame : MonoBehaviour {
         {
             canvas.gameObject.SetActive(true);
             Time.timeScale = 0;
-            Player.GetComponent<FirstPersonController>().enabled = false;
+            
         }
         else
         {
             canvas.gameObject.SetActive(false);
             Time.timeScale = 1;
-            Player.GetComponent<FirstPersonController>().enabled = true;
+            
         }
     }
 }
