@@ -76,6 +76,7 @@
      <Compile Include="Assets\Scripts\AIScripts\Ragdoller.cs" />
      <Compile Include="Assets\Scripts\AIScripts\WeakAIScript.cs" />
      <Compile Include="Assets\Scripts\AudioTriggerScript.cs" />
+     <Compile Include="Assets\Scripts\BombBoss.cs" />
      <Compile Include="Assets\Scripts\BridgeMasterScript.cs" />
      <Compile Include="Assets\Scripts\ButtonController.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
