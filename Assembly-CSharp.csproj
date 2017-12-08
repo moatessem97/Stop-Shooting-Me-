@@ -107,6 +107,7 @@
      <Compile Include="Assets\Scripts\NextLev.cs" />
      <Compile Include="Assets\Scripts\OpenBoxScript.cs" />
      <Compile Include="Assets\Scripts\OrbHolderSlot.cs" />
+     <Compile Include="Assets\Scripts\PauseGame.cs" />
      <Compile Include="Assets\Scripts\Pewpew.cs" />
      <Compile Include="Assets\Scripts\PickupItem1.cs" />
      <Compile Include="Assets\Scripts\PickUpSc.cs" />

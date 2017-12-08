@@ -1,6 +1,6 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\RotatorPlatFinal.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\RotatorFinal.cs">
     <Files>
       <File FileName="Assets\Scripts\CameraFollow.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\WeaponSwitcher.cs" Line="1" Column="1" />
@@ -19,8 +19,8 @@
       <File FileName="Assets\Scripts\ChaseSceneTrigger.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\CHangelevl.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\BombBoss.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\RotatorFinal.cs" Line="14" Column="66" />
-      <File FileName="Assets\Scripts\RotatorPlatFinal.cs" Line="5" Column="30" />
+      <File FileName="Assets\Scripts\RotatorFinal.cs" Line="14" Column="65" />
+      <File FileName="Assets\Scripts\RotatorPlatFinal.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
