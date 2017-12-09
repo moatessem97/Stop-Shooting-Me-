@@ -23,7 +23,7 @@
       <File FileName="Assets\Scripts\RotatorPlatFinal.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\PauseGame.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\SplashScreen.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\LevelManager.cs" Line="8" Column="22" />
+      <File FileName="Assets\Scripts\LevelManager.cs" Line="14" Column="22" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
