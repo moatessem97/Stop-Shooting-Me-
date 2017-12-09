@@ -9,8 +9,8 @@ public class TailParticleSc : MonoBehaviour {
     {
         //Instantiate(splash, coli, transform.rotation);
         if (other.GetComponent<CharacterHealth>())
-        {
-            GetComponent<CharacterHealth>().health -= 10f;
+        {   
+            other.GetComponent<CharacterHealth>().health -= 10f;
         }   
     }
 }

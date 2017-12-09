@@ -110,11 +110,13 @@
     <Compile Include="Assets\Buttons and Doors\PickUp1.cs" />
     <Compile Include="Assets\Buttons and Doors\Pickupable.cs" />
     <Compile Include="Assets\ColorFadeChange.cs" />
+    <Compile Include="Assets\dinoHealth.cs" />
     <Compile Include="Assets\MeleWeaponScript.cs" />
     <Compile Include="Assets\Scripts\AIScripts\Boss.cs" />
     <Compile Include="Assets\Scripts\AIScripts\Ragdoller.cs" />
     <Compile Include="Assets\Scripts\AIScripts\WeakAIScript.cs" />
     <Compile Include="Assets\Scripts\AudioTriggerScript.cs" />
+    <Compile Include="Assets\Scripts\BombBoss.cs" />
     <Compile Include="Assets\Scripts\BridgeMasterScript.cs" />
     <Compile Include="Assets\Scripts\ButtonController.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
@@ -145,6 +147,7 @@
     <Compile Include="Assets\Scripts\NextLev.cs" />
     <Compile Include="Assets\Scripts\OpenBoxScript.cs" />
     <Compile Include="Assets\Scripts\OrbHolderSlot.cs" />
+    <Compile Include="Assets\Scripts\PauseGame.cs" />
     <Compile Include="Assets\Scripts\Pewpew.cs" />
     <Compile Include="Assets\Scripts\PickupItem1.cs" />
     <Compile Include="Assets\Scripts\PickUpSc.cs" />
@@ -152,8 +155,10 @@
     <Compile Include="Assets\Scripts\ResetPlayersScript.cs" />
     <Compile Include="Assets\Scripts\RocketObject.cs" />
     <Compile Include="Assets\Scripts\RocketPlayer.cs" />
+    <Compile Include="Assets\Scripts\RotatorFinal.cs" />
     <Compile Include="Assets\Scripts\RotatorIcon.cs" />
     <Compile Include="Assets\Scripts\RotatorMenu.cs" />
+    <Compile Include="Assets\Scripts\RotatorPlatFinal.cs" />
     <Compile Include="Assets\Scripts\SplashScreen.cs" />
     <Compile Include="Assets\Scripts\SwarmTrigger.cs" />
     <Compile Include="Assets\Scripts\TargetButton.cs" />
