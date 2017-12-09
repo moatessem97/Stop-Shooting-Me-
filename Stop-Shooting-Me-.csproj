@@ -122,7 +122,10 @@
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\CameraFollowChase.cs" />
     <Compile Include="Assets\Scripts\CameraQuake.cs" />
+    <Compile Include="Assets\Scripts\CannonBallScript.cs" />
+    <Compile Include="Assets\Scripts\CannonShoot.cs" />
     <Compile Include="Assets\Scripts\CHangelevl.cs" />
+    <Compile Include="Assets\Scripts\ChangePhysicsLayers.cs" />
     <Compile Include="Assets\Scripts\CharacterAbilities.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\CharacterHealth.cs" />
     <Compile Include="Assets\Scripts\CharacterScripts\GroundedColliderCheck.cs" />
@@ -159,6 +162,7 @@
     <Compile Include="Assets\Scripts\RotatorIcon.cs" />
     <Compile Include="Assets\Scripts\RotatorMenu.cs" />
     <Compile Include="Assets\Scripts\RotatorPlatFinal.cs" />
+    <Compile Include="Assets\Scripts\ShootCannon.cs" />
     <Compile Include="Assets\Scripts\SplashScreen.cs" />
     <Compile Include="Assets\Scripts\SwarmTrigger.cs" />
     <Compile Include="Assets\Scripts\TargetButton.cs" />

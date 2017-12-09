@@ -18,7 +18,7 @@ public class dinoHealth : MonoBehaviour {
         healthBar.fillAmount = health / maxHealth;
         if (health <= 0)
         {
-            Debug.Log("dead" + gameObject.name);
+            Debug.Log(gameObject.name +" dead");
         }
     }
 }

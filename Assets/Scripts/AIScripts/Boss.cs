@@ -22,6 +22,8 @@ public class Boss : MonoBehaviour {
     private GameObject target;
     private CameraQuake cq;
     public GameObject sphere;
+    private GameObject[] spawners;
+    private GameObject[] ColorChange;
 	void Start () {
         anim = gameObject.GetComponent<Animator>();
         cq = GameObject.FindObjectOfType<CameraQuake>();
@@ -31,6 +33,9 @@ public class Boss : MonoBehaviour {
         Initialization = true;
         Invoke("initialize", 2f);
         parti = transform.GetChild(4).gameObject;
+        spawners = GameObject.FindGameObjectsWithTag("BombSpawn");
+        ColorChange = GameObject.FindGameObjectsWithTag("Floor");
+        Debug.Log(ColorChange.Length);
 	}
 	
 	void Update ()
@@ -64,10 +69,10 @@ public class Boss : MonoBehaviour {
             case States.Jump:
                 {
                     anim.SetBool("Jump", true);
-                    if (GameObject.FindObjectOfType<ColorFadeChange>())
+                   foreach(GameObject cfc in ColorChange)
                     {
-                        GameObject.FindObjectOfType<ColorFadeChange>().Yo = true;
-                    }  
+                        cfc.GetComponent<ColorFadeChange>().Yo = true;
+                    }
                 }
                 break;
             case States.TailAttack:
@@ -82,9 +87,9 @@ public class Boss : MonoBehaviour {
         timer = Time.time + 1 / Rate;
         setState(States.Idle);
         anim.SetBool("Jump", false);
-        if (GameObject.FindObjectOfType<ColorFadeChange>())
+        foreach (GameObject cfc in ColorChange)
         {
-            GameObject.FindObjectOfType<ColorFadeChange>().stop();
+            cfc.GetComponent<ColorFadeChange>().stop();
         }
     }
     public void bossTailReset()
@@ -215,6 +220,7 @@ public class Boss : MonoBehaviour {
     }
     private void instantiateBall()
     {
-        Instantiate(sphere, (gameObject.transform.position + new Vector3(0, 200f, -200f)), transform.rotation);
+        //Instantiate(sphere, (gameObject.transform.position + new Vector3(0, 200f, -200f)), transform.rotation);
+        Instantiate(sphere, spawners[Random.Range(0,spawners.Length)].transform.position, transform.rotation);
     }
 }

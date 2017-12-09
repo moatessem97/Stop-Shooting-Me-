@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class InteractionScript : MonoBehaviour {
 
-    private SSMThirdPersonCharacterInput player1,player2;
+    protected SSMThirdPersonCharacterInput player1,player2;
 
     //private void Start()
     //{

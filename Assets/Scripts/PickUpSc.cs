@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PickUpSc : MonoBehaviour {
     [SerializeField]
-    private GameObject myItem;
+    public GameObject myItem;
     private bool pickit;
     public GameObject Holder;
-
+    public bool bomb;
     private void Update()
     {
         if (!myItem)
@@ -21,7 +21,11 @@ public class PickUpSc : MonoBehaviour {
     {
         
         if (prim && myItem)
-        {     
+        {
+            if (myItem.name == "Bomb(Clone)")
+            {
+                bomb = false;
+            }
             myItem.GetComponent<Rigidbody>().useGravity = true;
             myItem.GetComponent<Collider>().enabled = true;
             myItem = null;
@@ -33,7 +37,10 @@ public class PickUpSc : MonoBehaviour {
     {
         if (sec && myItem)
         {
-            
+            if (myItem.name == "Bomb(Clone)")
+            {
+                bomb = false;
+            }
             myItem.GetComponent<Rigidbody>().useGravity = true;
             myItem.GetComponent<Collider>().enabled = true;
             myItem.GetComponent<Rigidbody>().velocity = transform.TransformDirection(Vector3.forward * 100f);
@@ -52,6 +59,10 @@ public class PickUpSc : MonoBehaviour {
         {
             if(pickit)
             {
+                if(other.name == "Bomb(Clone)")
+                {
+                    bomb = true;
+                }
                 myItem = other.gameObject;
                 myItem.GetComponent<Rigidbody>().useGravity = false;
                 myItem.GetComponent<Collider>().enabled = false;
@@ -62,6 +73,11 @@ public class PickUpSc : MonoBehaviour {
     }
     private void OnDisable()
     {
+        
+        if (myItem && myItem.name == "Bomb(Clone)")
+        {
+            bomb = false;
+        }
         myItem = null;
     }
 }

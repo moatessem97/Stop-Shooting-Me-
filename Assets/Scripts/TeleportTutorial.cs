@@ -9,6 +9,7 @@ public class TeleportTutorial : MonoBehaviour {
 	void OnTriggerEnter (Collider other) {
 		if (other.tag == "Player" ) {
 			other.gameObject.transform.position = teleportPoint.transform.position;
+            other.GetComponent<CharacterHealth>().health -= 75f;
 		}
 	}
 }

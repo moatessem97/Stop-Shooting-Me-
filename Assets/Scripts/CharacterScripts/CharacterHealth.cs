@@ -42,7 +42,10 @@ public class CharacterHealth : MonoBehaviour {
             {
                 GetComponent<SSMThirdPersonCharacterInput>().isDead = true;
                 GetComponentInChildren<WeaponSwitcher>().enabled = false;
-                GetComponentInChildren<MeleWeaponScript>().enabled = false;
+                if (GetComponentInChildren<MeleWeaponScript>())
+                {
+                    GetComponentInChildren<MeleWeaponScript>().enabled = false;
+                }
                 anim.SetBool("isDead", true);
                 anim.SetLayerWeight(1, 0);
             }
