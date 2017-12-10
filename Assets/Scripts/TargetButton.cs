@@ -7,14 +7,18 @@ public class TargetButton : MonoBehaviour
 
     public Animator target;
     public Animator ballBox;
+    bool targetHit;
 
-    void OnTriggerEnter(Collider Rocket)
+    public void TargetBeenHit()
     {
-        if (Rocket.gameObject.tag == "Rocket")
+        if (targetHit)
         {
-            target.SetTrigger("Pressed");
-            target.SetBool("Lowered", true);
-            ballBox.SetBool("Puzzle Solved", true);
+            return;
         }
+         target.SetTrigger("Pressed");
+         target.SetBool("Lowered", true);
+         ballBox.SetBool("Puzzle Solved", true);
+         targetHit = true;
+
     }
 }

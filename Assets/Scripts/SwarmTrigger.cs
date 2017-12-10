@@ -7,6 +7,8 @@ public class SwarmTrigger : MonoBehaviour
 
     public Animator entranceDoor;
     public GameObject podDoor;
+    public GameObject leftWall;
+    public GameObject rightWall;
 
     // Use this for initialization
     void OnTriggerExit (Collider Item)
@@ -17,6 +19,8 @@ public class SwarmTrigger : MonoBehaviour
             {
                 entranceDoor.SetBool("RoomComplete", true);
                 podDoor.SetActive(false);
+                leftWall.SetActive(false);
+                rightWall.SetActive(false);
                 this.gameObject.SetActive(false);
             }
         }
