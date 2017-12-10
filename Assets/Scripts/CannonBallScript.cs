@@ -26,14 +26,24 @@ public class CannonBallScript : MonoBehaviour {
         //rb.velocity = lel * 10f;
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
+    //private void OnCollisionEnter(Collision collision)
+    //{
 
-        if(collision.transform.tag == "Enemy")
+    //    if(collision.transform.tag == "Enemy")
+    //    {
+    //        Debug.Log("hello");
+    //        FindObjectOfType<dinoHealth>().health -= 25f;
+    //        Instantiate(partic, transform.position,transform.rotation);
+    //        Destroy(gameObject);    
+    //    }
+    //}
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.transform.tag == "Enemy")
         {
             Debug.Log("hello");
             FindObjectOfType<dinoHealth>().health -= 25f;
-            Instantiate(partic, transform.position,transform.rotation);
+            Instantiate(partic, transform.position, transform.rotation);
             Destroy(gameObject);
         }
     }

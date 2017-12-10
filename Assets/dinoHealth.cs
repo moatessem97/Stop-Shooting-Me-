@@ -18,6 +18,8 @@ public class dinoHealth : MonoBehaviour {
         healthBar.fillAmount = health / maxHealth;
         if (health <= 0)
         {
+            GetComponentInParent<Animator>().SetBool("Dead", true);
+            GetComponentInParent<Boss>().enabled = false;
             Debug.Log(gameObject.name +" dead");
         }
     }

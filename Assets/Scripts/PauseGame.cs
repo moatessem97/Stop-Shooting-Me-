@@ -5,10 +5,10 @@ using System.Collections;
 public class PauseGame : MonoBehaviour {
 	
     public Transform canvas;
-	
+    public GameObject GaymOver;
 	// Update is called once per frame
 	void Update () {
-	    if (Input.GetKeyDown(KeyCode.Escape))
+	    if (Input.GetButtonDown("Cancel"))
         {
             Pause();
         }
