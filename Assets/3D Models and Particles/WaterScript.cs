@@ -34,6 +34,11 @@ public class WaterScript : MonoBehaviour {
                 other.GetComponent<CharacterHealth>().health -= 0.5f;
                 //dmg player
             }
+            if (other.GetComponent<TargetButton>())
+            {
+                other.GetComponent<TargetButton>().TargetBeenHit();
+                Debug.Log("askdasmdakdas");
+            }
         }
     }
 }
