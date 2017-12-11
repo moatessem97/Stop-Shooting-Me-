@@ -39,6 +39,11 @@ public class WaterScript : MonoBehaviour {
                 other.GetComponent<TargetButton>().TargetBeenHit();
                 Debug.Log("askdasmdakdas");
             }
+            if (other.GetComponent<ResetTramScript>())
+            {
+                other.GetComponent<ResetTramScript>().TargetBeenHit();
+                Debug.Log("Yo Tram should reset");
+            }
         }
     }
 }
