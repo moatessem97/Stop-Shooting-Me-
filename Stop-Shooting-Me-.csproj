@@ -118,6 +118,8 @@
     <Compile Include="Assets\Scripts\AudioTriggerScript.cs" />
     <Compile Include="Assets\Scripts\BombBoss.cs" />
     <Compile Include="Assets\Scripts\BridgeMasterScript.cs" />
+    <Compile Include="Assets\Scripts\BridgeMazeConsole.cs" />
+    <Compile Include="Assets\Scripts\BridgeMazeMaster.cs" />
     <Compile Include="Assets\Scripts\ButtonController.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\CameraFollowChase.cs" />
@@ -141,9 +143,13 @@
     <Compile Include="Assets\Scripts\DoorButton.cs" />
     <Compile Include="Assets\Scripts\DoorSlotScript.cs" />
     <Compile Include="Assets\Scripts\Fading.cs" />
+    <Compile Include="Assets\Scripts\HazardScript.cs" />
     <Compile Include="Assets\Scripts\HoldWallButton.cs" />
     <Compile Include="Assets\Scripts\InteractionScript.cs" />
     <Compile Include="Assets\Scripts\LevelManager.cs" />
+    <Compile Include="Assets\Scripts\LightBoxConsole.cs" />
+    <Compile Include="Assets\Scripts\LightBoxDetection.cs" />
+    <Compile Include="Assets\Scripts\LightBoxStorage.cs" />
     <Compile Include="Assets\Scripts\Loading.cs" />
     <Compile Include="Assets\Scripts\M_Level1DoorScript.cs" />
     <Compile Include="Assets\Scripts\ManagerScript.cs" />
@@ -156,6 +162,7 @@
     <Compile Include="Assets\Scripts\PickUpSc.cs" />
     <Compile Include="Assets\Scripts\PlatformPuzzleDrop.cs" />
     <Compile Include="Assets\Scripts\ResetPlayersScript.cs" />
+    <Compile Include="Assets\Scripts\ResetTramScript.cs" />
     <Compile Include="Assets\Scripts\RocketObject.cs" />
     <Compile Include="Assets\Scripts\RocketPlayer.cs" />
     <Compile Include="Assets\Scripts\RotatorFinal.cs" />
@@ -174,7 +181,6 @@
   <ItemGroup>
     <None Include="Assets\AI\BehaviorTrees\StoopedRobot.txt" />
     <None Include="Assets\Extra Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
-    <None Include="Assets\Extra Assets\Gem\Shaders\Gem.shader" />
     <None Include="Assets\Extra Assets\sci-fi-weapons\README.txt" />
     <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
     <None Include="Assets\RAIN\Editor\Shaders\RAINShader.shader" />

@@ -21,6 +21,7 @@ public class SSMThirdPersonCharacterInput : MonoBehaviour {
     // 0 for mele 1 for rocket 2 for water 3 for gravity
     private GameObject[] weaponImages;
     private Animator anim;
+    private AudioSource FootAud,SaberAudio;
     private void Awake()
     {
         weaponImages = new GameObject[4];
@@ -61,7 +62,8 @@ public class SSMThirdPersonCharacterInput : MonoBehaviour {
             player1 = false;
             Controller1 = true;
         }
-
+        FootAud = GetComponent<AudioSource>();
+        SaberAudio = transform.GetChild(7).GetComponent<AudioSource>();
     }
 	public void weaponInput()
     {
@@ -286,5 +288,14 @@ public class SSMThirdPersonCharacterInput : MonoBehaviour {
 
         character.Movement(Move, Jump,Move);
         Jump = false;
+    }
+
+    public void PlayFootsteps()
+    {
+        FootAud.Play();
+    }
+    public void PlayLightSaber()
+    {
+        SaberAudio.Play();
     }
 }

@@ -29,8 +29,8 @@ public class CameraFollow : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		cameraDistance = 54.0f;
-		boundaries = 37.0f;
+		//cameraDistance = 54.0f;
+		//boundaries = 37.0f;
 	}
 
     // Update is called once per frame
