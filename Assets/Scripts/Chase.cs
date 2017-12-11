@@ -6,10 +6,11 @@ public class Chase : MonoBehaviour {
     private Animator anim;
 	public Transform target;
 	public float speed;
-
+    private AudioSource aud;
     private void Start()
     {
         anim = gameObject.GetComponent<Animator>();
+        aud = GetComponent<AudioSource>();
     }
     void Update() {
 		float step = speed * Time.deltaTime;
@@ -19,4 +20,8 @@ public class Chase : MonoBehaviour {
             anim.SetBool("done", true);
         }
 	}
+    public void PlayDinoStomp()
+    {
+        aud.Play();
+    }
 }

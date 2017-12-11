@@ -162,7 +162,6 @@
   <ItemGroup>
     <None Include="Assets\AI\BehaviorTrees\StoopedRobot.txt" />
     <None Include="Assets\Extra Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
-    <None Include="Assets\Extra Assets\Gem\Shaders\Gem.shader" />
     <None Include="Assets\Extra Assets\sci-fi-weapons\README.txt" />
     <None Include="Assets\RAIN\Editor\ScriptTemplates\BehaviorTreeTemplate.xml" />
     <None Include="Assets\RAIN\Editor\Shaders\RAINShader.shader" />
