@@ -56,6 +56,7 @@ public class SSMThirdPersonCharacterInput : MonoBehaviour {
         {
             player1 = true;
             Keyboard = true;
+            Controller2 = true;
         }
         else if (gameObject.name == "Player 2")
         {
