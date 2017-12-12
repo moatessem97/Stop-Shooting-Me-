@@ -12,6 +12,7 @@ public class ThirdPersonController2 : MonoBehaviour {
     public bool grounded, bossAtt, bossAtt2;
     Vector3 normal,AirMove;
     private Transform boss;
+    public AudioSource aud;
     //GameObject groundCheckObj;
     //BoxCollider groundCheckObjCollider;
 	void Start () {
@@ -128,7 +129,10 @@ public class ThirdPersonController2 : MonoBehaviour {
                 rb.velocity = new Vector3(rb.velocity.x, JumpForce, rb.velocity.z);
                 grounded = false;
                 anim.applyRootMotion = false;
-
+                if (aud)
+                {
+                    aud.Play();
+                }
             }
         }
         else

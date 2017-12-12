@@ -11,6 +11,8 @@ public class CannonShoot : InteractionScript {
     private PickUpSc p1, p2;
     public GameObject ammo;
     private ParticleSystem ps;
+    public GameObject pos;
+    private AudioSource aud;
     public override void Action()
     {
         Debug.Log("Hello");
@@ -21,6 +23,7 @@ public class CannonShoot : InteractionScript {
         anim = GetComponentInParent<Animator>();
         getScripts();
         ps = gameObject.GetComponentInChildren<ParticleSystem>();
+        aud = GetComponent<AudioSource>();
     }
     
     void OnTriggerEnter(Collider col) {
@@ -47,10 +50,11 @@ public class CannonShoot : InteractionScript {
                 {
                     isLoaded = false;
                     ps.Play();
-                    Instantiate(ammo, transform.GetChild(2).transform.position, transform.rotation);
+                    aud.Play();
+                    Instantiate(ammo, pos.transform.position, transform.rotation);
                     cannonRb.isKinematic = false;
                     cannonRb.useGravity = true;
-                    cannonRb.AddForce(Vector3.forward * -1300f);
+                    cannonRb.AddForce(transform.forward * -1300f);
                 }
                 if (!isLoaded)
                 {
