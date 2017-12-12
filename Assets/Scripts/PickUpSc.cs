@@ -78,6 +78,12 @@ public class PickUpSc : MonoBehaviour {
         {
             bomb = false;
         }
-        myItem = null;
+        if (myItem)
+        {
+            myItem.GetComponent<Rigidbody>().useGravity = true;
+            myItem.GetComponent<Collider>().enabled = true;
+            myItem = null;
+        }
+        
     }
 }
