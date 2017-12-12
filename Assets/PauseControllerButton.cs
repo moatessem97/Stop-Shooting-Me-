@@ -20,7 +20,7 @@ public class PauseControllerButton : MonoBehaviour {
         }
         if (Input.GetKeyDown(KeyCode.JoystickButton2))
         {
-            LMS.RestartLevel("Menu");
+            LMS.LoadLevel("Menu");
         }
     }
 }
