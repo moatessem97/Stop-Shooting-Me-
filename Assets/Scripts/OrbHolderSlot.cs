@@ -8,6 +8,7 @@ public class OrbHolderSlot : MonoBehaviour
     public GameObject bridgeMaster;
     public GameObject proxyKey;
     Transform setOrbLocation;
+    public Light light;
 
     // Use this for initialization
     void Start()
@@ -23,6 +24,7 @@ public class OrbHolderSlot : MonoBehaviour
             {
                 Item.gameObject.GetComponent<Transform>().position = setOrbLocation.position;
                 bridgeMaster.GetComponent<BridgeMasterScript>().GetKeyStateUpdate(Item.gameObject.name);
+                light.color = Color.green;
                 Item.gameObject.SetActive(false);
                 proxyKey.SetActive(true);
                 this.gameObject.SetActive(false);
