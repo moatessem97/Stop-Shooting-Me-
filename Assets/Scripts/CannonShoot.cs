@@ -81,7 +81,12 @@ public class CannonShoot : InteractionScript {
                 {
                     isLoaded = false;
                     ps.Play();
-                    Instantiate(ammo, transform.GetChild(5).transform.position, transform.rotation);
+                    aud.Play();
+                    Instantiate(ammo, pos.transform.position, transform.rotation);
+                    cannonRb.isKinematic = false;
+                    cannonRb.useGravity = true;
+                    cannonRb.AddForce(transform.forward * -1300f);
+
                 }
                 if (!isLoaded)
                 {

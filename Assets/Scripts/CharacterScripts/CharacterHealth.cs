@@ -74,6 +74,7 @@ public class CharacterHealth : MonoBehaviour {
                 if (GetComponentInChildren<MeleWeaponScript>())
                 {
                     GetComponentInChildren<MeleWeaponScript>().enabled = false;
+                   
                 }
                 anim.SetBool("isDead", true);
                 anim.SetLayerWeight(1, 0);

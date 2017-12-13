@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class dinoHealth : MonoBehaviour {
 
     private Image healthBar;
@@ -12,7 +13,6 @@ public class dinoHealth : MonoBehaviour {
         health = maxHealth;
         healthBar = GameObject.Find("BossHealth").transform.GetChild(0).GetComponent<Image>();
 	}
-	
 	// Update is called once per frame
 	void Update () {
         healthBar.fillAmount = health / maxHealth;
@@ -21,6 +21,11 @@ public class dinoHealth : MonoBehaviour {
             GetComponentInParent<Animator>().SetBool("Dead", true);
             GetComponentInParent<Boss>().enabled = false;
             Debug.Log(gameObject.name +" dead");
+            Invoke("LOL", 4f);
         }
+    }
+    public void LOL()
+    {
+        SceneManager.LoadScene(20);
     }
 }

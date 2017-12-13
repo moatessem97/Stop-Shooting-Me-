@@ -34,14 +34,14 @@ public class GroundedColliderCheck : MonoBehaviour {
     {
         CheckStop = false;
     }
-    private void Update()
-    {
-        //Physics.CheckSphere(transform.position,)
-    }
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.blue;
-        Gizmos.DrawSphere(transform.position, 2f);
+    //private void Update()
+    //{
+    //    //Physics.CheckSphere(transform.position,)
+    //}
+    //private void OnDrawGizmos()
+    //{
+    //    Gizmos.color = Color.blue;
+    //    Gizmos.DrawSphere(transform.position, 2f);
         
-    }
+    //}
 }

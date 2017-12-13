@@ -17,12 +17,16 @@ public class MeleWeaponScript : MonoBehaviour {
     //}
 
     void Update () {
-		if(inputManager.gameObject.name == "Player 1")
+		if(inputManager.gameObject.name == "Player 1" )
         {
-            anim.SetBool("isMele", Input.GetButton("Fire1M"));
-            return;
-            anim.SetBool("isMele", Input.GetButton("Fire1J2"));
-            return;
+            if (inputManager.Keyboard)
+            {
+                anim.SetBool("isMele", Input.GetButton("Fire1M"));
+            }
+            if (inputManager.Controller2)
+            {
+                anim.SetBool("isMele", Input.GetButton("Fire1J2"));
+            }
         }
         if(inputManager.gameObject.name == "Player 2")
         {
