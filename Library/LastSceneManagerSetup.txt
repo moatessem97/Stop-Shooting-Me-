@@ -1,8 +1,1 @@
-sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Credits.unity
-=======
-- path: Assets/Scenes/Tut1.unity
->>>>>>> origin/master
-  isLoaded: 1
-  isActive: 1
+sceneSetups: []

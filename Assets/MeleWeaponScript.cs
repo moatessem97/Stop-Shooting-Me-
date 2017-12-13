@@ -9,21 +9,20 @@ public class MeleWeaponScript : MonoBehaviour {
     private void Awake()
     {
         anim = gameObject.GetComponentInParent<Animator>();
-    }
-    private void Start()
-    {
         inputManager = gameObject.GetComponentInParent<SSMThirdPersonCharacterInput>();
     }
+    //private void Start()
+    //{
+    //    inputManager = gameObject.GetComponentInParent<SSMThirdPersonCharacterInput>();
+    //}
 
     void Update () {
-		if(inputManager.gameObject.name == "Player 1" && inputManager.Keyboard == true)
+		if(inputManager.gameObject.name == "Player 1")
         {
             anim.SetBool("isMele", Input.GetButton("Fire1M"));
-        }
-        else if (inputManager.gameObject.name == "Player 1" && inputManager.Controller2 == true)
-        {
+            return;
             anim.SetBool("isMele", Input.GetButton("Fire1J2"));
-
+            return;
         }
         if(inputManager.gameObject.name == "Player 2")
         {

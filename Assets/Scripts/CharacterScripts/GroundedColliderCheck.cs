@@ -8,6 +8,8 @@ public class GroundedColliderCheck : MonoBehaviour {
     [SerializeField]
     private ThirdPersonController2 pc;
     public bool CheckStop;
+    //public List<GameObject>
+
     private void Start()
     {
         CheckStop = false;
@@ -31,5 +33,15 @@ public class GroundedColliderCheck : MonoBehaviour {
     public void TurnBoolTrue()
     {
         CheckStop = false;
+    }
+    private void Update()
+    {
+        //Physics.CheckSphere(transform.position,)
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.blue;
+        Gizmos.DrawSphere(transform.position, 2f);
+        
     }
 }

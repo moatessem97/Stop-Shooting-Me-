@@ -26,6 +26,10 @@ public class PickUpSc : MonoBehaviour {
             {
                 bomb = false;
             }
+            if (myItem.tag == "Player")
+            {
+                myItem.transform.rotation = Quaternion.Euler(0, myItem.transform.rotation.eulerAngles.y, 0);
+            }
             myItem.GetComponent<Rigidbody>().useGravity = true;
             myItem.GetComponent<Collider>().enabled = true;
             myItem = null;
@@ -40,6 +44,10 @@ public class PickUpSc : MonoBehaviour {
             if (myItem.name == "Bomb(Clone)")
             {
                 bomb = false;
+            }
+            if(myItem.tag == "Player")
+            {
+                myItem.transform.rotation = Quaternion.Euler(0, myItem.transform.rotation.eulerAngles.y, 0);
             }
             myItem.GetComponent<Rigidbody>().useGravity = true;
             myItem.GetComponent<Collider>().enabled = true;
@@ -80,6 +88,10 @@ public class PickUpSc : MonoBehaviour {
         }
         if (myItem)
         {
+            if (myItem.tag == "Player")
+            {
+                myItem.transform.rotation = Quaternion.Euler(0, myItem.transform.rotation.eulerAngles.y, 0);
+            }
             myItem.GetComponent<Rigidbody>().useGravity = true;
             myItem.GetComponent<Collider>().enabled = true;
             myItem = null;
