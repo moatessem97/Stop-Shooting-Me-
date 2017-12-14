@@ -73,8 +73,10 @@
      <Compile Include="Assets\ColorFadeChange.cs" />
      <Compile Include="Assets\dinoHealth.cs" />
      <Compile Include="Assets\MeleWeaponScript.cs" />
+     <Compile Include="Assets\PauseControllerButton.cs" />
      <Compile Include="Assets\Scripts\AIScripts\Boss.cs" />
      <Compile Include="Assets\Scripts\AIScripts\Ragdoller.cs" />
+     <Compile Include="Assets\Scripts\AIScripts\RobotDetonation.cs" />
      <Compile Include="Assets\Scripts\AIScripts\WeakAIScript.cs" />
      <Compile Include="Assets\Scripts\AudioTriggerScript.cs" />
      <Compile Include="Assets\Scripts\BombBoss.cs" />
