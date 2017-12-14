@@ -109,6 +109,7 @@
     <Compile Include="Assets\Buttons and Doors\NewButton\RobotTrigger.cs" />
     <Compile Include="Assets\Buttons and Doors\PickUp1.cs" />
     <Compile Include="Assets\Buttons and Doors\Pickupable.cs" />
+    <Compile Include="Assets\camCinematic.cs" />
     <Compile Include="Assets\ColorFadeChange.cs" />
     <Compile Include="Assets\dinoHealth.cs" />
     <Compile Include="Assets\MeleWeaponScript.cs" />
